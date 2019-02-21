@@ -1,0 +1,600 @@
+html{font-size: 0.32rem;
+	font-family: '兰亭黑-简';
+}
+button{
+	border: none;
+}
+.container{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+/* 音乐 */
+#mp3Btn{
+	position: relative;
+}
+.rotateClass{
+	width: 0.5rem;
+	height: 0.5rem; 
+	position: absolute; 
+	top: 0.1rem;
+	right: 5.8%;
+}
+/* 进度条 */
+#loading{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	background: url(../image/index_bg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+#loading .loadBox{
+	width: 37.07%;
+}
+#loading .loadBox img{
+	width: 100%;
+}
+#loading .spanPar{
+	width: 51.2%;
+	height: 0.14rem;
+	background-color: #dbeaff;
+	border-radius: 0.07rem;
+	margin-top: -0.6rem;
+	position: relative;
+	margin-left: -4%;
+}
+#loading .spanPar div{
+	width: 0%;
+	height: 100%;
+	background-color: #a12234;
+	border-radius: 0.07rem;
+}
+#loading .spanPar p{
+	position: absolute;
+	left: 102%;
+	top: 50%;
+	font-size: 0.25rem;
+	color: #060552;
+	line-height: 0.25rem;
+	margin-top: -0.125rem;
+}
+#page1{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	z-index: 10;
+	background: url(../image/index_bg1.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#page5{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width:100%;
+	height:100%;
+	background: rgba(0,0,0,0.7);
+	background-size: 100%;
+	box-sizing: border-box;
+}
+.page2{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	z-index: 100;
+	background: rgba(0,0,0,0.7);
+	background-size: 100%;
+	padding:0 9.3%;
+	box-sizing: border-box;
+}
+#page3,#page4{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width:100%;
+	height:100%;
+	z-index: 100;
+	background: url(http://hyimg.hengdikeji.com/snmnh/award_bg.jpg) no-repeat;
+	background-size: 100%;
+	padding:0 9.3%;
+	box-sizing: border-box;
+}
+
+#topLogo{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	margin-top:  0.1rem;
+}
+#topLogo .logoImg{
+	width: 28.27%;
+	position: absolute;
+	top: 0;
+	left: 2.53%;
+}
+#topLogo .myAward{
+	position: absolute;
+	top: 0;
+	right: 2.53%;
+	width: 28.8%;
+}
+#shank .logoImg{
+	width: 28.27%;
+	position: absolute;
+	top: 0;
+	left: 2.53%;
+}
+#shank .logoImg img{
+	width: 100%;
+}
+.circleBox{
+	width: 57.2%;
+	position: relative;
+}
+.circle1{
+	position: absolute;
+	top: -8.7%;
+	left: -8.7%;
+	width: 117.4%;
+	z-index: 0;
+	
+}
+.circle1 img{
+	width: 100%;
+}
+.circleBox .circle2{
+	width: 100%;
+	animation: cir1 0.6s linear infinite;
+    -moz-animation: cir1 0.6s linear infinite;
+    -webkit-animation: cir1 0.6s linear infinite;
+    -ms-animation: cir1 0.6s linear infinite;
+}
+.box{
+	width: 100%;
+    height: 6.2rem;
+    overflow-y: scroll;
+}
+.circle3{
+	position: absolute;
+	top: -8.7%;
+	left: -8.7%;
+	width: 117.4%;
+	z-index: 1;
+	animation: cir 0.5s linear infinite;
+    -moz-animation: cir 0.5s linear infinite;
+    -webkit-animation: cir 0.5s linear infinite;
+    -ms-animation: cir 0.5s linear infinite;
+}
+.circle4{
+	position: absolute;
+	top: -20%;
+	left: -26.45%;
+	width: 152.9%;
+	
+	
+}
+#mainAward .awardList:nth-last-child(1){
+	padding-bottom: 0.1rem;
+}
+.phoneShank{
+	position: absolute;
+	left: 0;
+	bottom: 11.9%;
+	text-align: center;
+	font-size: 0.26rem;
+	color: #295dae;
+	width: 100%;
+	animation: cir2 1s linear infinite;
+    -moz-animation: cir2 1s linear infinite;
+    -webkit-animation: cir2 1s linear infinite;
+    -ms-animation: cir2 1s linear infinite;
+}
+.circle4 img{
+	width: 100%;
+}
+.circle3 img{
+	width: 100%;
+}
+.circleBox .circle2 img{
+	width: 100%;
+}
+@-moz-keyframes cir{
+	0%{opacity: 1;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1;}
+}
+@-ms-keyframes cir{
+	0%{opacity: 1;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1;}
+}
+@-webkit-keyframes cir{
+	0%{opacity: 1;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1;}
+}
+@keyframes cir{
+	0%{opacity: 1;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1;}
+}
+@-moz-keyframes cir1{
+	0%{transform: rotate(-10deg);}
+	50%{transform: rotate(10deg);}
+	100%{transform: rotate(-10deg);}
+}
+@-ms-keyframes cir1{
+	0%{transform: rotate(-10deg);}
+	50%{transform: rotate(10deg);}
+	100%{transform: rotate(-10deg);}
+}
+@-webkit-keyframes cir1{
+	0%{transform: rotate(-10deg);}
+	50%{transform: rotate(10deg);}
+	100%{transform: rotate(-10deg);}
+}
+@keyframes cir1{
+	0%{transform: rotate(-10deg);}
+	50%{transform: rotate(10deg);}
+	100%{transform: rotate(-10deg);}
+}
+@-moz-keyframes cir2{
+	0%{font-size: 0.26rem;}
+	50%{font-size: 0.28rem;}
+	100%{font-size: 0.26rem;}
+}
+@-ms-keyframes cir2{
+	0%{font-size: 0.26rem;}
+	50%{font-size: 0.28rem;}
+	100%{font-size: 0.26rem;}
+}
+@-webkit-keyframes cir2{
+	0%{font-size: 0.26rem;}
+	50%{font-size: 0.28rem;}
+	100%{font-size: 0.26rem;}
+}
+@keyframes cir2{
+	0%{font-size: 0.26rem;}
+	50%{font-size: 0.28rem;}
+	100%{font-size: 0.26rem;}
+}
+#topLogo .logoImg img,#topicFont img{width: 100%;}
+#topLogo .myAward img{width: 100%;}
+#centerInput{
+	width: 100%;
+	background: url('http://hyimg.hengdikeji.com/snmnh/input.png') no-repeat;
+	background-size: 100% 100%;
+	height: 3.7rem;
+	margin-top: 0.2rem;
+}
+#centerInput textarea{
+ 	box-sizing: border-box;
+ 	background-color:transparent; 
+ 	width: 100%;
+ 	border:none;
+ 	outline: none;
+ 	font-size: 0.3rem;
+ 	color: #fff;
+ 	margin-top: 0.7rem;
+ 	padding:0 0.5rem;
+ 	overflow-y: scroll;
+ 	height: 2.4rem;
+ }
+.footButton{
+	width:42.8%;
+}
+.footButton img{width: 100%;height: 0.65rem;} 
+/* 我的商品列表页 */
+/* .listBody{
+	background: url('../image/index_bg.jpg') no-repeat;
+	background-size: 100%;
+	margin:0 2.7%;
+} */
+
+#title{
+	width: 63%;
+	font-size: 0.3rem;
+	margin-bottom: 0.6rem;
+}
+#title img{width: 100%;}
+	/* 无奖品 */
+#mainAward{
+	background: url('http://hyimg.hengdikeji.com/snmnh/detailBg.png') no-repeat;
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%;
+	/*overflow-y: scroll;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	-webkit-overflow-scrolling: touch;
+}
+#shank{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: url('../image/index_bg2.jpg') no-repeat left top;
+	background-size: 100% 100%;
+}
+.mylists{
+	width: 93.87%;
+}
+.noPadding{height: 0.1rem;}
+#mainAward .nothing{
+	width: 55%;
+}
+#mainAward .nothing img{
+	width: 100%;
+}
+#mainAward .tipFont{
+	text-align: center;
+	font-size: 0.28rem;
+	color: white;
+	padding-top: 0.3rem;
+	line-height: 0.38rem;
+}
+.twoBtn a{
+		float: left;
+		display: block;
+		font-size: 0.3rem;
+		width: 34.23%;
+		margin-top: 0.6rem;
+	}
+.twoBtn a img{
+	width: 100%;
+}
+.twoBtn a:nth-child(2){
+	width: 58.24%;
+	float: right;
+}
+/* 有奖品 */
+.haveThing{height: 0.1rem;}
+#mainAward .awardList{
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	background: url('../image/award_bg.png') no-repeat;
+	background-size: 100% 100%;
+	margin:0.3rem 3.8% 0 3.8%;
+	height: 2.6rem;
+	color: white;
+	box-sizing: border-box;
+}
+.awardList .items:nth-child(1){flex-basis:40%;padding:0 3%}
+.awardList .items:nth-child(2){flex-basis:60%;padding-right: 2.5%;}
+.awardList .listLeft img{width: 100%;}
+.awardList .listRight h4{font-size: 0.37rem;font-weight: bold;opacity: 0.9}
+.awardList .listRight{text-align: right;}
+.awardList .listRight .status button{
+	font-size: 0.28rem;
+	width: 70%;
+	border: none;
+	outline: none;
+	color: white;
+	background:url('http://hyimg.hengdikeji.com/snmnh/font_bg.png') no-repeat;
+	background-size: 100% 100%;
+	padding: 0.18rem 0 0.13rem 0;
+	opacity: 0.9;
+}
+.awardList .listRight p{
+	color: white;
+	font-size: 0.23rem;
+	margin-top: 0.2rem;
+} 
+/* 领取页 */
+#awardTip{
+	width: 100%;
+	margin-top: 1.1rem;
+	position: relative;
+}
+#awardTip img{width: 100%;}
+#awardTip .name,
+.awardOpen .name
+{
+	position: absolute;
+	top:8.3%;
+	background-size: 100% 100%;
+	width: 78%;
+	margin:0 11%;
+	height: .7rem;
+	line-height: .7rem;
+	color: #f8ea01;
+	font-weight: bold;
+	font-size: 0.35rem;
+	text-align: center;
+	font-family: '兰亭黑-简';
+}
+#awardTip .imgThing{
+	position: absolute;
+	top: 2.5rem;
+	width: 100%;
+}
+.backHome{
+	width: 52.54%;
+	display: block;
+	margin: 0.35rem auto 0;
+	font-size: 0.3rem;
+}
+.backHome img{
+	width: 100%;
+}
+#awardTip .imgThing img{width: 78%;margin-left: 11%}
+#awardTip .tipAction{
+	position: absolute;
+	bottom: 0.7rem;
+	font-size: 0.3rem;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-family: '黑体';
+}
+#awardTip .tipGet{
+	position: absolute;
+	bottom: 0.5rem;
+	font-size: 0.3rem;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-family: '黑体';
+}
+/* 抽奖页 */
+.getBody{
+	background: url(http://hyimg.hengdikeji.com/snmnh/award_bg.jpg) no-repeat;
+	background-size: 100%;
+	margin:0 9.3%;
+}
+.awardOpen{
+ 	position: relative;
+}
+.awardOpen .openBg img,.awardOpen .imgDea img{width: 100%;}
+.page2 .awardOpen .imgDea{
+	position: absolute;
+    top: 19.5%;
+    width: 109.3%;
+    left: -5%;
+    background: url(../image/redbag.png) no-repeat;
+    height: 55.01%;
+    background-size: cover;
+}
+.redmsg .li2{
+	width: 45%;
+	margin: 0 auto;
+	font-size: 0.24rem;
+	text-align: center;
+}
+.redmsg{
+	font-size: 0.28rem;
+	color: #fff;
+	position: absolute;
+	bottom: .6rem;
+	width: 100%;
+	text-align: center;
+}
+.redmsg .li1{
+	color: #fff100;
+	font-family: 'Impact';
+}
+#page21 .redmsg .li1 p{
+	font-size: 0.42rem;
+	line-height: 0.55rem;
+}
+#page21 .redmsg .li1{
+	margin-bottom: 0.2rem;
+}
+#page21 .awardOpen .imgDea{
+	background-image: url(../image/redbag1.png);
+}
+.redmsg .li1 .bigfont{
+	font-size: 1.02rem;
+}
+.awardOpen .imgThing img{width: 95%;margin-left: 2%;margin-top: -0.1rem}
+.awardOpen .tipAction{
+	position: absolute;
+	bottom: 1.1rem;
+	color: white;
+	font-size: 0.22rem;
+	opacity: 0.8;
+	text-align: center;
+	width: 70%;
+	margin:0 15%;
+	font-family: '微软雅黑';
+	line-height: 0.3rem;
+}
+.awardOpen .tipGet{
+	width: 100%;
+	position: absolute;
+	bottom: 0.5rem;
+	color: #efd50d;
+	font-size: 0.22rem;
+	opacity: 0.8;
+	text-align: center;
+	font-family: '微软雅黑';
+}
+#page3 .awardOpen .imgDea{
+	position: absolute;
+	top: 1.9rem;
+	width: 3rem;
+	left: 1.1rem;
+
+	height: 3.9rem;
+	background-size: cover;
+}
+#page3 .awardOpen .redbag{
+	background: url('http://hyimg.hengdikeji.com/snmnh/rebagopen.png') no-repeat;
+	background-size:cover ;
+}
+#page3 .awardOpen .notredbag{
+	background: url('http://hyimg.hengdikeji.com/snmnh/notrebagopen.png') no-repeat;
+	background-size:cover ;
+}
+#page3 .awardOpen .notredbag .redmsg{
+	display: none;
+}
+
+.details .imgDea{
+	position: absolute;
+	top: 1.9rem;
+	width: 3rem;
+	left: 1.1rem;
+
+	height: 3.9rem;
+	background-size: cover;
+}
+.dhm{
+	width: 60%;
+	height: 0.56rem;
+	background-color: #790807;
+	border-radius: 5px;
+	border: none;
+	text-align: center;
+	color: #fff;
+}
+@-moz-keyframes light{
+	0%{opacity: 1.0;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1.0;}
+}
+@-ms-keyframes light{
+	0%{opacity: 1.0;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1.0;}
+}
+@-webkit-keyframes light{
+	0%{opacity: 1.0;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1.0;}
+}
+@keyframes light{
+	0%{opacity: 1.0;}
+	50%{opacity: 0.5;}
+	100%{opacity: 1.0;}
+}

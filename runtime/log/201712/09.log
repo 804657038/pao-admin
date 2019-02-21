@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+[ 2017-12-09T11:05:23+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/prize/index.html [运行时间：0.126936s][吞吐率：7.88req/s] [内存消耗：3,784.29kb] [文件加载：57]
+[ error ] [0]Class app\admin\model\Prize does not exist[/Users/Web/archie/yajienh/thinkphp/library/think/App.php:260]
+---------------------------------------------------------------
+[ 2017-12-09T11:05:23+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/lottery/index.html
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/lottery/index.html [运行时间：0.080406s][吞吐率：12.44req/s] [内存消耗：3,797.02kb] [文件加载：57]
+[ error ] [0]Class app\admin\model\AdminLottery does not exist[/Users/Web/archie/yajienh/thinkphp/library/think/App.php:260]
+---------------------------------------------------------------
+[ 2017-12-09T16:13:07+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/game/honbao
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/game/honbao [运行时间：0.218736s][吞吐率：4.57req/s] [内存消耗：3,342.70kb] [文件加载：56]
+[ error ] [1045]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)[/Users/Web/archie/yajienh/thinkphp/library/think/db/Connection.php:293]
+---------------------------------------------------------------
+[ 2017-12-09T16:42:01+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/game/rank_honbao
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/game/rank_honbao [运行时间：0.222004s][吞吐率：4.50req/s] [内存消耗：3,956.19kb] [文件加载：62]
+[ error ] [0]类的属性不存在:app\index\model\Member->user_name[/Users/Web/archie/yajienh/thinkphp/library/think/Model.php:573]

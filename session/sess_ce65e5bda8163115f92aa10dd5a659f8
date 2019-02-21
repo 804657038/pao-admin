@@ -1,0 +1,1 @@
+think|a:3:{s:10:"admin_user";a:3:{s:7:"user_id";i:1;s:8:"username";s:5:"admin";s:9:"login_num";i:40;}s:4:"ruls";a:2:{s:11:"name|名称";s:15:"require|max:255";s:11:"text|说明";s:15:"require|max:255";}s:9:"__token__";s:32:"4e8724c34b32e836194f9212144699dc";}

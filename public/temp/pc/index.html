@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="target-densitydpi=device-dpi,width=1200,user-scalable=yes" />
+    <title>财富新势力，创变赢未来</title>
+    <meta name="author" content="红包流星雨"/>
+    <meta name="Copyright" content="Netease" />
+    <meta name="keywords" content="红包流星雨"/>
+    <meta name="description" content="红包流星雨"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="__PC__/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="__PC__/css/style.css?v=1">
+    <script type="text/javascript" src="__PC__/js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+    <script type="text/javascript" src='__PC__/js/m.Tween.js'></script>
+    <script type="text/javascript" src='__PC__/js/lufylegend-1.10.1.js'></script>
+    <script src='http://cdn.bootcss.com/socket.io/1.3.7/socket.io.js'></script>
+    <script type="text/javascript">
+        var parth = '__PC__';
+    </script>
+    <style type="text/css">
+        .start_left{
+            font-size: 45px !important;
+        }
+        /*.div1191 span{
+            font-size: 56px !important;
+        }*/
+        .redWraps{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        .start_left{
+            font-size: 36px !important;
+        }
+    </style>
+</head>
+<body style="overflow: hidden">
+<div class="page_home" style="display: none">
+    <img src="" alt="" class="logo">
+    <img src="" alt="" class="banner">
+    <img src="" alt="" class="er">
+    <div id="view">
+        <div id="logoIcons"></div>
+    </div>
+
+</div>
+<div class="countDown" style="display: none">
+    <div class="frame bounceInDown">
+        <p>3!</p>
+    </div>
+    <img src="" alt="" class="hore bounceInUp">
+</div>
+<div class="startBg" style="display: block;">
+    <div style="position: relative;display: none;">
+        <img src="__PC__/images/skzq.png" alt="" style="position:absolute;top:110px;width: 400px; left: 5%;">
+    </div>
+    <div class="div1200">
+        <div class="start_left">
+            <div class="div1191" style="margin-bottom:10px">
+                当前共有<span id="p_num">0</span>人参加
+            </div>
+            <h5 style="margin-top:10px">发出的红包</h5>
+            <h4 class="hbnumber">
+                <span id="red_num">0</span>
+                <sub style="color: #295dae;">个</sub>
+            </h4>
+            <!--<h3 id="amount">0元</h3>-->
+            <div class="erBox">
+				<div class="erImg">
+					<img src="__PC__/img/er.png?v=4" />
+				</div>
+            </div>
+        </div>
+		<div class="bigRed">
+			<img src="__PC__/img/bigRed.png" />
+			<div class="head">
+				<img src="__PC__/img/money.png" />
+			</div>
+			<div class="wxname">
+				<!--<p>王文杰</p>-->
+			</div>
+			<div class="wxyen">
+				<p><span>&yen;</span>188</p>
+			</div>
+		</div>
+        <div class="start_right" style="width: 966px !important;">
+
+            <div id="mylegend" style="margin-left: -100px;"></div>
+            <img src="__PC__/images/rebward.png" alt="" class="redWraps">
+
+        </div>
+
+    </div>
+
+</div>
+<div id="pop" accesskey="" style="display: none">
+	 <div class="pop">
+	 	<p class="tile">金额最多</p>
+	 	<div class="head1">
+	 		<img id="r_img" src="__PC__/img/headerImg.png" />
+	 	</div>
+	 	<div class="wxname1">
+	 		<p id="r_name">王文杰</p>
+	 	</div>
+	 	<div class="wxyen2">
+	 		<p><span>&yen;</span><span id="r_money">198.56</span></p>
+	 	</div>
+	 </div>
+</div>
+<div class="resultBg">
+    <div class="sg" style="display: none;margin-top: 10%">
+        <ul class="result_c">
+            <li class="li1">
+                <p class="headTit">速度最快</p>
+                <div class="redBg">
+                    <img src="__PC__/img/headerImg.png" alt="" class="headerImg">
+                    <span class='wxName'>欧阳哈哈</span>
+                    <p class='money'>139.39元</p>
+                </div>
+            </li>
+            <li class="li2">
+                <p class="headTit">抢红包最多</p>
+                <div class="redBg">
+                    <img src="__PC__/img/headerImg.png" alt="" class="headerImg">
+                    <span class='wxName'>欧阳哈哈</span>
+                    <p class='money'>139.39元</p>
+                </div>
+            </li>
+            <li class="li3">
+                <p class="headTit">单个红包最大</p>
+                <div class="redBg">
+                    <img src="__PC__/img/headerImg.png" alt="" class="headerImg">
+                    <span class='wxName'>欧阳哈哈</span>
+                    <p class='money'>139.39元</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="shig" style="display: none">
+        <ul class="maxHonor bounceInDown" style="top:176px;">
+
+        </ul>
+        <ul class="minHonor bounceInUp" style="bottom: 160px">
+
+        </ul>
+    </div>
+</div>
+
+
+<script type="text/javascript" src='__PC__/js/main.js?v=8'></script>
+
+<script type="text/javascript">
+    window.onload=function(){
+        var hh = $('body').height();
+        var ww = $('.start_right').width();
+        // LGlobal.align = LStageAlign.MIDDLE;
+        // LGlobal.stageScale = LStageScaleMode.EXACT_FIT ;
+        // LSystem.screen(LStage.FULL_SCREEN);
+        init(26,'mylegend',ww,hh,main,LEvent.INIT);
+
+    }
+    $(function(){
+        //定时器
+        setInterval(function(){
+            $.get("<{:url('pc/game_end')}>",function(res){
+                $("#p_num").html(res.count_open);
+                $("#red_num").html(res.count_red);
+            })
+        },1000);
+
+    });
+
+</script>
+<script>
+    // 连接服务端，workerman.net:2120换成实际部署web-msg-sender服务的域名或者ip
+    var socket = io('http://120.24.212.12:2120');
+    // uid可以是自己网站的用户id，以便针对uid推送以及统计在线人数
+    uid = 221;
+    // socket连接后以uid登录
+    socket.on('connect', function(){
+        socket.emit('login', uid);
+    });
+    // 后端推送来消息时
+    socket.on('new_msg', function(msg){
+        var obj = JSON.parse(msg);
+        $('#r_img').attr('src',obj.open_face);
+        $('#r_name').html(obj.open_name);
+        $('#r_money').html(obj.money);
+        $("#pop").show();
+        setTimeout(function(){
+            $("#pop").hide();
+        },30000);
+
+    });
+    // 后端推送来在线数据时
+    socket.on('update_online_count', function(online_stat){
+        console.log(online_stat);
+    });
+</script>
+</body>
+</html>

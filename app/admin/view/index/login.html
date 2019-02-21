@@ -1,0 +1,71 @@
+<extend name="common/common"></extend>
+<block name="head">
+    <style>
+        .captcha_input{width: 30% !important;float: left}
+        .captcha{width: 70%;float: left;height:50px;}
+    </style>
+</block>
+<block name="body">
+    <body class="login-bg">
+
+    <div class="login">
+        <div class="message">欢迎登录HD-Admin</div>
+        <div id="darkbannerwrap"></div>
+
+        <form method="post" class="layui-form" >
+            <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+            <input name="username" placeholder="用户名"  type="text" lay-verify="required" class="layui-input" >
+            <hr class="hr15">
+            <input name="password" lay-verify="required" placeholder="密码"  type="password" class="layui-input">
+            <hr class="hr15">
+            <div>
+                <input type="text" name="captcha" lay-verify="required" placeholder="验证码" class="layui-input captcha_input">
+                <img src="<{:captcha_src()}>" alt="captcha" class="captcha" onclick="captcha(this)"/>
+            </div>
+
+            <hr class="hr15">
+            <input value="登录" lay-submit lay-filter="login" style="width:100%;" type="submit">
+            <hr class="hr20" >
+        </form>
+    </div>
+    <script>
+        
+        $(function  () {
+            layui.use('form', function(){
+                var form = layui.form;
+
+                //监听提交
+              
+                form.on('submit(login)', function(data){
+                    $.ajax({
+                        url:"<{:url('login/login_do')}>",
+                        cache: false,
+                        dataType: 'JSON',
+                        type: 'POST',
+                        data: data.field,
+                        success:function(res){
+                            $('[name="__token__"]').attr('value',res.token);
+                            if(res.code==1){
+                                window.location.href=res.url;
+                            }else{
+                                layer.msg(res.msg, {icon: 5,time:1000});
+                                var $src=$('.captcha').attr('src');
+                                $('.captcha').attr('src',$src+'?v='+Math.random());
+                            }
+                        }
+                    });
+                    return false;
+                });
+            });
+            $('.captcha').on('click',function(){
+                var $src=$(this).attr('src');
+                $(this).attr('src',$src+'?v='+Math.random());
+            })
+        })
+
+
+    </script>
+    </body>
+
+</block>
+

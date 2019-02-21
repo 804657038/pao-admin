@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+[ 2017-12-06T09:10:55+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/
+[ info ] 127.0.0.1/yjnh/public/ [运行时间：0.731042s][吞吐率：1.37req/s] [内存消耗：5,114.97kb] [文件加载：59]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'open_id' in 'where clause'[F:\wamp\www\yjnh\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-06T09:27:00+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/
+[ info ] 127.0.0.1/yjnh/public/ [运行时间：0.159009s][吞吐率：6.29req/s] [内存消耗：5,164.06kb] [文件加载：60]
+[ error ] [8]未定义变量: province[F:\wamp\www\yjnh\runtime\temp\f7913190e2e1c8dbe7a6cc2c4a5d42b1.php:36]
+---------------------------------------------------------------
+[ 2017-12-06T16:39:32+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/index/index/sendMsg
+[ info ] 127.0.0.1/yjnh/public/index/index/sendMsg [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：3,156.06kb] [文件加载：47]
+[ error ] [0]方法参数错误:data[F:\wamp\www\yjnh\thinkphp\library\think\App.php:282]
+---------------------------------------------------------------
+[ 2017-12-06T18:01:08+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/prize/index.html
+[ info ] 127.0.0.1/yjnh/public/admin/prize/index.html [运行时间：0.118007s][吞吐率：8.47req/s] [内存消耗：5,174.83kb] [文件加载：57]
+[ error ] [0]Class app\admin\model\Prize does not exist[F:\wamp\www\yjnh\thinkphp\library\think\App.php:260]

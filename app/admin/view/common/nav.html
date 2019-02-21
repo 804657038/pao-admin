@@ -1,0 +1,23 @@
+<div class="x-nav">
+     <php>
+
+         $action=request()->action();
+         $controller=request()->controller();
+         $route=$controller.'/'.$action;
+
+         $menu=db('menu')->where(['route'=>$route])->find();
+         if($menu['parent_id']!=0){
+         $menu2=db('menu')->where('id',$menu['parent_id'])->value('name');
+         }
+     </php>
+      <span class="layui-breadcrumb">
+
+        <a href="javascript:;"><{$menu2}></a>
+
+        <a><cite><{$menu['name']}></cite></a>
+      </span>
+
+    <a class="layui-btn layui-btn-small" style="line-height:1.6em;margin-top:3px;float:right" href="<{:url($route)}>" title="刷新">
+        <i class="layui-icon" style="line-height:30px">ဂ</i>
+    </a>
+</div>

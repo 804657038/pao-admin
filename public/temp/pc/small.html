@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" id="viewport" content="target-densitydpi=device-dpi,width=1200,user-scalable=yes" />
+    <title>红包流星雨</title>
+    <meta name="author" content="红包流星雨"/>
+    <meta name="Copyright" content="Netease" />
+    <meta name="keywords" content="红包流星雨"/>
+    <meta name="description" content="红包流星雨"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=1">
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.5/js/swiper.min.js"></script>
+    <script type="text/javascript" src='js/m.Tween.js'></script>
+    <script type="text/javascript" src='js/lufylegend-1.10.1.js'></script>
+</head>
+<body>
+
+
+<div class="page_home" style="display: none">
+
+    <img src="" alt="" class="logo">
+    <img src="" alt="" class="banner">
+    <img src="" alt="" class="er">
+
+    <div id="view">
+        <div id="logoIcons"></div>
+    </div>
+
+</div>
+
+<div class="countDown" style="display: none">
+
+    <div class="frame bounceInDown">
+        <p>3!</p>
+    </div>
+    <img src="" alt="" class="hore bounceInUp">
+</div>
+
+<div class="startBg" style="display: block">
+    <div class="div1200">
+        <div class="start_right" style="right: 24% !important;">
+            <div id="mylegend"></div>
+            <img src="img/redWraps.png" alt="" class="redWraps">
+        </div>
+
+    </div>
+</div>
+
+<div class="resultBg">
+    <div class="sg" style="display: none;margin-top: 10%">
+        <ul class="result_c">
+            <li class="li1">
+                <p class="headTit">速度最快</p>
+                <div class="redBg">
+                    <img src="img/headerImg.png" alt="" class="headerImg">
+                    <span class='wxName'>欧阳哈哈</span>
+                    <i class='money'>139.39元</i>
+                </div>
+            </li>
+            <li class="li2">
+                <p class="headTit">抢红包最多</p>
+                <div class="redBg">
+                    <img src="img/headerImg.png" alt="" class="headerImg">
+                    <span class='wxName'>欧阳哈哈</span>
+                    <i class='money'>139.39元</i>
+                </div>
+            </li>
+            <li class="li3">
+                <p class="headTit">单个红包最大</p>
+                <div class="redBg">
+                    <img src="img/headerImg.png" alt="" class="headerImg">
+                    <span class='wxName'>欧阳哈哈</span>
+                    <i class='money'>139.39元</i>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="shig" style="display: none">
+        <ul class="maxHonor bounceInDown" style="top:176px;">
+
+        </ul>
+        <ul class="minHonor bounceInUp" style="bottom: 160px">
+
+        </ul>
+    </div>
+</div>
+
+<script type="text/javascript" src='js/main.js?v=4'></script>
+
+<script type="text/javascript">
+    window.onload=function(){
+        var hh = $('body').height();
+        var ww = $('.start_right').width();
+        // LGlobal.align = LStageAlign.MIDDLE;
+        // LGlobal.stageScale = LStageScaleMode.EXACT_FIT ;
+        // LSystem.screen(LStage.FULL_SCREEN);
+        init(26,'mylegend',ww,hh,main,LEvent.INIT);
+
+    }
+</script>
+
+</html>

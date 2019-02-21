@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta content="yes" name="apple-mobile-web-app-capable"/>
+    <meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+    <meta content="telephone=no" name="format-detection"/>
+    <title>Document</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<canvas id="main" width="100" height="100" style="display: block"></canvas>
+
+<img id="head" style="display: none" src="http://wx.qlogo.cn/mmopen/vi_32/zG6Cf1RJ1dDueuic5PmHneJCdMYIficHaQwjic24YRdGRbK3Cy93IsLc9C9e9HGcOsPib3hDz0leXuYQrnnPQO6HBA/0" alt="">
+
+<img id="startimg" src="" alt="" style="width: 100%;height: 100%;display: block">
+</body>
+<script type="text/javascript">
+    $(function(){
+        var canvas=document.getElementById('main');
+        var ctx=canvas.getContext("2d");
+
+        var img = new Image();
+        img.src = 'http://wx.qlogo.cn/mmopen/vi_32/zG6Cf1RJ1dDueuic5PmHneJCdMYIficHaQwjic24YRdGRbK3Cy93IsLc9C9e9HGcOsPib3hDz0leXuYQrnnPQO6HBA/0';
+        img.onload = function () {
+            ctx.drawImage(img, 0, 0, 100, 100);
+            var image =canvas.toDataURL("html");
+            $('#startimg').attr('src',image);
+        };
+
+    })
+
+</script>
+</html>

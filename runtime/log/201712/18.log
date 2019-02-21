@@ -1,0 +1,33 @@
+---------------------------------------------------------------
+[ 2017-12-18T19:51:03+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ error ] [8]未定义数组下标: 1
+---------------------------------------------------------------
+[ 2017-12-18T19:51:07+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ error ] [8]未定义数组下标: 1
+---------------------------------------------------------------
+[ 2017-12-18T19:51:09+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ error ] [8]未定义数组下标: 1
+---------------------------------------------------------------
+[ 2017-12-18T19:51:19+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/prize/index.html [运行时间：0.118525s][吞吐率：8.44req/s] [内存消耗：2,952.15kb] [文件加载：67]
+[ error ] [8]未定义数组下标: 1[/Users/Web/archie/yajienh/runtime/temp/edf2042c59b2317878bf2992690b6a41.php:83]
+---------------------------------------------------------------
+[ 2017-12-18T19:51:58+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/prize/index.html [运行时间：0.106753s][吞吐率：9.37req/s] [内存消耗：2,952.15kb] [文件加载：67]
+[ error ] [8]未定义数组下标: 1[/Users/Web/archie/yajienh/runtime/temp/edf2042c59b2317878bf2992690b6a41.php:83]
+---------------------------------------------------------------
+[ 2017-12-18T19:53:05+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/prize/index.html [运行时间：0.248826s][吞吐率：4.02req/s] [内存消耗：2,840.98kb] [文件加载：65]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yajienh.admin_admin_menu' doesn't exist[/Users/Web/archie/yajienh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-18T19:53:43+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/prize/index.html
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/prize/index.html [运行时间：0.116521s][吞吐率：8.58req/s] [内存消耗：3,098.57kb] [文件加载：69]
+[ error ] [8]未定义数组下标: 1[/Users/Web/archie/yajienh/runtime/temp/edf2042c59b2317878bf2992690b6a41.php:83]
+---------------------------------------------------------------
+[ 2017-12-18T20:49:38+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/game/honbao
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/game/honbao [运行时间：0.194769s][吞吐率：5.13req/s] [内存消耗：2,433.93kb] [文件加载：59]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yajienh.admin_admin_prize' doesn't exist[/Users/Web/archie/yajienh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-18T20:54:19+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/game/put_honbao
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/game/put_honbao [运行时间：0.082301s][吞吐率：12.15req/s] [内存消耗：2,701.08kb] [文件加载：58]
+[ error ] [0]variable type error： array[/Users/Web/archie/yajienh/thinkphp/library/think/Response.php:318]

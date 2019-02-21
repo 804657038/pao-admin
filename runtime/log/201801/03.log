@@ -1,0 +1,8 @@
+---------------------------------------------------------------
+[ 2018-01-03T16:38:46+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/index
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/index [运行时间：0.120554s][吞吐率：8.30req/s] [内存消耗：1,775.91kb] [文件加载：52]
+[ error ] [2]file_get_contents(): Filename cannot be empty[/Users/Web/snmnh/app/index/controller/Msg.php:41]
+---------------------------------------------------------------
+[ 2018-01-03T19:48:26+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/myprize.html
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/myprize.html [运行时间：0.055683s][吞吐率：17.96req/s] [内存消耗：1,810.04kb] [文件加载：53]
+[ error ] [8]未定义数组下标: 9[/Users/Web/snmnh/app/index/controller/Msg.php:221]

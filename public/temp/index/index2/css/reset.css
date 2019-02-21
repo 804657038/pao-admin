@@ -1,0 +1,208 @@
+﻿/*重写浏览器的所有默认样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,code,form,input,textarea,p,th,td,figure{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+i,em,b,strong{font-style:normal;font-weight:normal;}
+li{list-style:none;vertical-align:top;}
+table{ border-collapse:collapse;}
+textarea{resize:none;overflow:auto;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;line-height: inherit;font-size: inherit;color: inherit;}
+input,button,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+textarea{resize:none;overflow:auto;}
+a{text-decoration:none;outline:none;font-size: inherit;line-height: inherit;color:inherit;}
+img{border:none; vertical-align:top;}
+
+
+
+ /*基本属性*/
+body{background:#fff;}
+
+
+
+
+ /*各浏览器的默认属性clear*/
+
+ /*清楚Iphone 的圆角*/
+input[type=submit],input[type=text],input[type=button]{
+	-webkit-appearance:none;
+	line-height: inherit;
+}
+
+ /*ios系统中元素被触摸时产生的半透明灰色遮罩*/
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+ /*部分android系统中元素被点击时产生的边框怎么去掉*/
+ /*-webkit-user-modify有个副作用，就是输入法不再能够输入多个字符*/
+ /*另外，有些机型去除不了，如小米2*/
+ /*对于按钮类还有个办法，不使用a或者input标签，直接用div标签*/
+a,button,input,textarea{
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+/*-webkit-user-modify:read-write-plaintext-only;*/
+}
+
+ /*winphone系统a、input标签被点击时产生的半透明灰色背景怎么去掉*/
+ /*<meta name="msapplication-tap-highlight" content="no">*/
+
+ /*webkit表单元素的默认外观怎么重置*/
+ /*.css{-webkit-appearance:none;}*/
+
+ /*禁止ios 长按时不触发系统的菜单，禁止ios&android长按时下载图片*/
+ /*.css{-webkit-touch-callout: none}*/
+
+ /*禁止ios和android用户选中文字*/
+ /*.css{-webkit-user-select:none}*/
+
+ /*audio元素和video元素在ios和andriod中无法自动播放*/
+ /*$('html').one('touchstart',function(){*/
+     /*audio.play()*/
+ /*})*/
+
+ /*手机拍照和上传图片*/
+ /* 选择照片*/
+ /*<input type=file accept="image/*">*/
+ /* 选择视频*/
+ /*<input type=file accept="video/*">*/
+
+ /*取消input在ios下，输入的时候英文首字母的默认大写*/
+<input autocapitalize="off" autocorrect="off" />
+
+ /*android 上去掉语音输入按钮*/
+input::-webkit-input-speech-button {display: none}
+
+/*禁止winphone默认触摸事件 */
+ /*html{-ms-touch-action: none;}*/
+
+ /*1.目前只有ios7+、winphone8+支持自动播放*/
+ /*2.支持Airplay的设备（如：音箱、Apple TV)播放*/
+ /*x-webkit-airplay="true" */
+ /*3.播放视频不全屏，ios7+、winphone8+支持，部分android4+支持（含华为、小米、魅族）*/
+ /*webkit-playsinline="true" */
+ /*<video x-webkit-airplay="true" webkit-playsinline="true" preload="auto" autoplay src="http:"></video>*/
+
+ /*禁用 select 默认下拉箭头*/
+
+/*::-ms-expand 适用于表单选择控件下拉箭头的修改，有多个属性值，设置它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。*/
+
+select::-ms-expand {
+display: none;
+}
+/*禁用 radio 和 checkbox 默认样式*/
+
+/*::-ms-check 适用于表单复选框或单选按钮默认图标的修改，同样有多个属性值，设置它隐藏 (display:none) 并使用背景图片来修饰可得到我们想要的效果。*/
+
+input[type=radio]::-ms-check,input[type=checkbox]::-ms-check{
+display: none;
+}
+
+
+
+/*移动端定义字体的代码*/
+ /*body{font-family:Helvetica;}*/
+
+/*::-webkit-scrollbar {
+	display: none;
+}
+手机端滚动条干掉
+*/
+
+ 
+
+
+.fb{font-weight: bold;}
+.auto{margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+.transition{
+	 transition:all 0.6s ease;
+}
+
+.poa{
+position: absolute;
+}
+.pof{
+	position: fixed;
+}
+.por{
+	position: relative;
+}
+
+
+
+/*meta*/
+/*
+	<meta name="description" content="不超过150个字符"/>
+	<!-- 页面关键词 -->
+	<meta name="keywords" content=""/>
+	<!-- 网页作者 -->
+	<!-- iOS 设备 begin -->
+	<meta name="apple-mobile-web-app-title" content="标题">
+	<!-- 添加到主屏后的标题（iOS 6 新增） -->
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+	<!-- 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 -->
+	<meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+	<!-- 添加智能 App 广告条 Smart App Banner（iOS 6+ Safari） -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	<!-- 设置苹果工具栏颜色 -->
+	<meta name="format-detection" content="telphone=no, email=no"/>
+	<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+	<!-- 启用360浏览器的极速模式(webkit) -->
+	<meta name="renderer" content="webkit">
+	<!-- 避免IE使用兼容模式 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+	<meta name="HandheldFriendly" content="true">
+	<!-- 微软的老式浏览器 -->
+	<meta name="MobileOptimized" content="320">
+	<!-- uc强制竖屏 -->
+	<meta name="screen-orientation" content="portrait">
+	<!-- QQ强制竖屏 -->
+	<meta name="x5-orientation" content="portrait">
+	<!-- UC强制全屏 -->
+	<meta name="full-screen" content="yes">
+	<!-- QQ强制全屏 -->
+	<meta name="x5-fullscreen" content="true">
+	<!-- UC应用模式 -->
+	<meta name="browsermode" content="application">
+	<!-- QQ应用模式 -->
+	<meta name="x5-page-mode" content="app">
+	<!-- windows phone 点击无高光 -->
+	<meta name="msapplication-tap-highlight" content="no">
+	<!-- iOS 图标 begin -->
+	<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png"/>
+	<!-- iPhone 和 iTouch，默认 57x57 像素，必须有 -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png"/>
+	<!-- Retina iPhone 和 Retina iTouch，114x114 像素，可以没有，但推荐有 -->
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png"/>
+	<!-- Retina iPad，144x144 像素，可以没有，但推荐有 -->
+	<!-- iOS 图标 end -->
+
+	<!-- iOS 启动画面 begin -->
+	<link rel="apple-touch-startup-image" sizes="768x1004" href="/splash-screen-768x1004.png"/>
+	<!-- iPad 竖屏 768 x 1004（标准分辨率） -->
+	<link rel="apple-touch-startup-image" sizes="1536x2008" href="/splash-screen-1536x2008.png"/>
+	<!-- iPad 竖屏 1536x2008（Retina） -->
+	<link rel="apple-touch-startup-image" sizes="1024x748" href="/Default-Portrait-1024x748.png"/>
+	<!-- iPad 横屏 1024x748（标准分辨率） -->
+	<link rel="apple-touch-startup-image" sizes="2048x1496" href="/splash-screen-2048x1496.png"/>
+	<!-- iPad 横屏 2048x1496（Retina） -->
+
+	<link rel="apple-touch-startup-image" href="/splash-screen-320x480.png"/>
+	<!-- iPhone/iPod Touch 竖屏 320x480 (标准分辨率) -->
+	<link rel="apple-touch-startup-image" sizes="640x960" href="/splash-screen-640x960.png"/>
+	<!-- iPhone/iPod Touch 竖屏 640x960 (Retina) -->
+	<link rel="apple-touch-startup-image" sizes="640x1136" href="/splash-screen-640x1136.png"/>
+	<!-- iPhone 5/iPod Touch 5 竖屏 640x1136 (Retina) -->
+	<!-- iOS 启动画面 end -->
+
+	<!-- iOS 设备 end -->
+	<meta name="msapplication-TileColor" content="#000"/>
+	<!-- Windows 8 磁贴颜色 -->
+	<meta name="msapplication-TileImage" content="icon.png"/>
+	<!-- Windows 8 磁贴图标 -->
+
+	<link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml"/>
+	<!-- 添加 RSS 订阅 -->
+	<link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+	<!-- 添加 favicon icon -->
+*/

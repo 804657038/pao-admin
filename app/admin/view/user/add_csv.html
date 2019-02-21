@@ -1,0 +1,28 @@
+<extend name="common/common"></extend>
+
+<block name="body">
+    <body>
+    <div class="x-body">
+        <div style="line-height: 50px">
+            <p>温馨提示：请上传csv格式的excel文件</p>
+        </div>
+        <div style="line-height: 50px">
+            <p>模板文件：下载模板，按模板格式上传。<span><a id="down" style="text-decoration: underline;" href="__ROOT__/uploads/模板.csv">点击下载</a></span></p>
+        </div>
+        <form action="<{:url('save_csv')}>" method="post" class="layui-form layui-form-pane" enctype="multipart/form-data">
+            <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+            <div style="line-height: 50px">
+                <label>上传文件：</label>
+                <input type="file" name="file">
+            </div>
+            <div class="layui-form-item" style="margin-top: 25px">
+                <button id="cubt" class="layui-btn" lay-submit="" lay-filter="add">上传</button>
+            </div>
+        </form>
+    </div>
+    <script>
+
+    </script>
+
+    </body>
+</block>

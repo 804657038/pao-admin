@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<meta content="yes" name="apple-mobile-web-app-capable"/>
+	<meta content="black" name="apple-mobile-web-app-status-bar-style"/>
+	<meta content="telephone=no" name="format-detection"/>
+	<title>年会</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/all.css">
+</head>
+<body style="background-color: black">
+	<div id="loading">
+		<ul>
+			<li><img src="image/star.png"></li>
+			<li class="spanPar">
+				<span class="bottom"></span>
+				<span class="top"></span>
+			</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/rem.js"></script>
+	<script type="text/javascript">
+		/*进度条*/
+	    var bottomWidth=$('span.bottom').width();
+	    var myVar = setInterval(function(){spanWidth()},18);
+	    function spanWidth(){
+	        var topWidth=$('span.top').width();
+	        topWidth+=1;
+	        $('span.top').width(topWidth);
+	        console.log(topWidth);
+	        if (topWidth>=bottomWidth) {
+	            stopLoading();
+	        }
+	    }
+	    function stopLoading() {
+	        clearInterval(myVar);
+	         $('#loading').hide();
+	        window.location.href="index.html";
+	    }
+	    /*居中*/
+	    function setDivCenter(){   
+        var top = ($(window).height() - $('#loading ul').height())/2; 
+        $('#loading').css( { 'padding-top' : top} );  
+	    }  
+	    setDivCenter();
+	</script>
+</body>
+</html>

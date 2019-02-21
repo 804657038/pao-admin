@@ -1,0 +1,91 @@
+<extend name="common/common"></extend>
+<block name="body">
+    <body>
+    <div class="x-body">
+        <form action="" method="post" class="layui-form layui-form-pane">
+            <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+            <input class="layui-input" type="hidden" name="id" value="<{$data['id']}>">
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>上级菜单
+                </label>
+                <div class="layui-input-inline">
+                    <select name="parent_id" lay-verify="required">
+                        <option value="0">作为一级菜单</option>
+                        <volist name="menu_list" id="vo">
+                            <option value="<{$vo['id']}>" <if condition="$data['parent_id'] eq $vo['id']">selected</if>><{$vo['name']}></option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>菜单名称
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="name" name="name" value="<{$data['name']}>" required="" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red"></span>菜单icon
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="icon" name="icon" value="<{:htmlentities($data['icon'])}>"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red"></span>菜单路由
+                </label>
+                <div class="layui-input-inline">
+                    <input type="text" id="route" name="route" value="<{$data['route']}>"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>权限标识
+                </label>
+                <div class="layui-input-inline">
+                    <select name="auth" lay-verify="required">
+                        <volist name="auth_list" id="vo">
+                            <option value="<{$vo['auth']}>" <if condition="$data['auth'] eq $vo['auth']">selected</if> ><{$vo['name']}></option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red"></span>菜单排序
+                </label>
+                <div class="layui-input-inline">
+                    <input type="number" id="listorder" name="listorder" value="<{$data['listorder']}>"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <button class="layui-btn" lay-submit="" lay-filter="add">提交</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        layui.use(['form','layer'], function(){
+            $ = layui.jquery;
+            var form = layui.form
+                ,layer = layui.layer;
+
+            //监听提交
+            form.on('submit(add)', function(data){
+                AjaxP("<{:url('menu/save')}>",'POST',data.field,false,false);
+                return false;
+            });
+
+
+        });
+    </script>
+
+    </body>
+</block>

@@ -1,0 +1,142 @@
+<extend name="common/common"></extend>
+<block name="body">
+    <body>
+    <div class="x-body">
+        <form action="" method="post" class="layui-form layui-form-pane">
+            <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>所属角色
+                </label>
+                <div class="layui-input-inline">
+                    <select name="group_id" lay-verify="required" >
+                        <volist name="role_list" id="vo">
+                            <option value="<{$vo['id']}>"><{$vo['name']}></option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>用户名
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" id="username" name="username" required="" lay-verify="required"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                    <div class="layui-form-mid layui-word-aux">
+                        <span class="x-red"></span>将会成为您唯一的登入名
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red"></span>姓名
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" id="name" name="name"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red"></span>邮箱
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" id="email" name="email"
+                               autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red"></span>手机号码
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" id="mobile" name="mobile" value=" "
+                               autocomplete="off" class="layui-input">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="layui-form-item layui-form-text">
+                <label class="layui-form-label">
+                    拥有权限(不选则默认使用所属角色权限)
+                </label>
+                <table  class="layui-table layui-input-block">
+                    <tbody>
+                    <volist name="auth_list" id="vo">
+                        <tr>
+                            <td>
+                                <if condition="$vo['child']">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                </if>
+                                <{$vo['name']}>
+                                <input name="auth[<{$vo['id']}>]" type="checkbox" lay-filter="chaeckALl" class="chaeckALl chaeck" value="<{$vo['auth']}>">
+                            </td>
+                            <td>
+                                <if condition="$vo['child']">
+                                    <div class="layui-input-block">
+                                        <volist name="$vo['child']" id="v">
+                                            <input name="auth[<{$v['id']}>]" type="checkbox" class="chaeckChren<{$vo['auth']}> chaeck" value="<{$v['auth']}>"> <{$v['name']}>
+                                        </volist>
+                                    </div>
+                                </if>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="layui-form-item">
+                <label for="L_pass" class="layui-form-label">
+                    <span class="x-red">*</span>密码
+                </label>
+                <div class="layui-input-inline">
+                    <input type="password" id="L_pass" name="password" required="" lay-verify="pass"
+                           autocomplete="off" class="layui-input">
+                </div>
+                <div class="layui-form-mid layui-word-aux">
+                    6到16个字符
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="L_repass" class="layui-form-label">
+                    <span class="x-red">*</span>确认密码
+                </label>
+                <div class="layui-input-inline">
+                    <input type="password" id="L_repass" name="password_confirm" required="" lay-verify="repass"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <button class="layui-btn" lay-submit="" lay-filter="add">提交</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        layui.use(['form','layer'], function(){
+            $ = layui.jquery;
+            var form = layui.form
+                ,layer = layui.layer;
+
+            //监听提交
+            form.on('submit(add)', function(data){
+                AjaxP("<{:url('admin/save')}>",'POST',data.field,false,false);
+                return false;
+            });
+
+
+        });
+    </script>
+
+    </body>
+</block>

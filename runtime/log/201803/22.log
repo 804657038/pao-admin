@@ -1,0 +1,27 @@
+---------------------------------------------------------------
+[ 2018-03-22T14:57:11+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index2/index
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'snmnh.admin_prize' doesn't exist
+---------------------------------------------------------------
+[ 2018-03-22T14:57:24+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index2/index
+[ info ] www.web.cnm/snmnh/public/index.php/index/index2/index [运行时间：0.133008s][吞吐率：7.52req/s] [内存消耗：3,493.45kb] [文件加载：60]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'snmnh.admin_prize' doesn't exist[/Users/Web/snmnh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-22T14:58:26+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index2/index
+[ info ] www.web.cnm/snmnh/public/index.php/index/index2/index [运行时间：0.092227s][吞吐率：10.84req/s] [内存消耗：3,486.73kb] [文件加载：58]
+[ error ] [0]模板文件不存在:/Users/Web/snmnh/app/index/../../public/temp/index/index2/index.html[/Users/Web/snmnh/thinkphp/library/think/view/driver/Think.php:80]
+---------------------------------------------------------------
+[ 2018-03-22T14:58:55+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index2/index
+[ info ] www.web.cnm/snmnh/public/index.php/index/index2/index [运行时间：0.136690s][吞吐率：7.32req/s] [内存消耗：2,835.98kb] [文件加载：56]
+[ error ] [8]未定义变量: rc[/Users/Web/snmnh/runtime/temp/d910f0295d63926e6451f95ddbfee186.php:401]
+---------------------------------------------------------------
+[ 2018-03-22T15:00:32+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index2/game.html
+[ info ] www.web.cnm/snmnh/public/index.php/index/index2/game.html [运行时间：0.120004s][吞吐率：8.33req/s] [内存消耗：3,922.50kb] [文件加载：62]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'snmnh.admin_red_list' doesn't exist[/Users/Web/snmnh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-22T15:00:32+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index2/game.html
+[ info ] www.web.cnm/snmnh/public/index.php/index/index2/game.html [运行时间：0.078071s][吞吐率：12.81req/s] [内存消耗：3,922.50kb] [文件加载：62]
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'snmnh.admin_red_list' doesn't exist[/Users/Web/snmnh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2018-03-22T15:02:08+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index2/game.html
+[ info ] www.web.cnm/snmnh/public/index.php/index/index2/game.html [运行时间：0.095584s][吞吐率：10.46req/s] [内存消耗：3,940.01kb] [文件加载：61]
+[ error ] [1]Class 'app\index\model\Info' not found[/Users/Web/snmnh/app/index/controller/Fater.php:37]

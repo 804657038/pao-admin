@@ -1,0 +1,129 @@
+<extend name="common/common"></extend>
+<block name="body">
+    <if>
+    <include file="common/nav"/>
+    <div class="x-body">
+        <xblock>
+            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon">&#xe640;</i>批量删除</button>
+            <button class="layui-btn" onclick="x_admin_show('添加菜单','<{:url('menu/create')}>',400,500)"><i class="layui-icon">&#xe61f;</i>添加</button>
+
+        </xblock>
+
+        <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+        <table class="layui-table">
+            <thead>
+                <tr>
+                    <th>
+                        <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i class="layui-icon">&#xe605;</i></div>
+                    </th>
+                    <th>ID</th>
+                    <th>菜单名称</th>
+                    <th>菜单路由</th>
+                    <th>权限标示</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody>
+                <if condition="$list">
+                <volist name="list" id="vo">
+                    <tr>
+                        <td>
+                            <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<{$vo['id']}>'><i class="layui-icon">&#xe605;</i></div>
+                        </td>
+                        <td>
+                            <{$vo['id']}>
+                        </td>
+                        <td><{$vo['name']}>
+                            <if condition="$vo['icon']">
+                                <i class="layui-icon"><{$vo['icon']}></i>
+                            </if>
+                        </td>
+                        <td>
+                            <notempty name="$vo['route']">
+                                <a href="<{:url($vo['route'])}>"><{:url($vo['route'])}></a>
+                            </notempty>
+                        </td>
+                        <td><{$vo['auth']}></td>
+                        <td class="td-manage">
+                            <a title="编辑"  onclick="x_admin_show('编辑菜单','<{:url('menu/edit',['id'=>$vo['id']])}>',400,500)" href="javascript:;">
+                                编辑
+                            </a>
+                            <a title="删除" onclick="delAll('<{$vo['id']}>')" href="javascript:;">
+                                删除
+                            </a>
+                        </td>
+                    </tr>
+                    <if condition="$vo['child']">
+                        <volist name="$vo['child']" id="v">
+                            <tr>
+                                <td>
+                                    <div class="layui-unselect layui-form-checkbox" lay-skin="primary" data-id='<{$v['id']}>'><i class="layui-icon">&#xe605;</i></div>
+                                </td>
+                                <td>
+                                    <{$v['id']}>
+                                </td>
+                                <td>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <{$v['name']}>
+                                    <if condition="$v['icon']">
+                                        <i class="layui-icon"><{$v['icon']}></i>
+                                    </if>
+                                </td>
+                                <td>
+                                    <notempty name="$v['route']">
+                                        <a href="<{:url($v['route'])}>"><{:url($v['route'])}></a>
+                                    </notempty>
+                                </td>
+                                <td><{$v['auth']}></td>
+                                <td class="td-manage">
+                                    <a title="编辑"  onclick="x_admin_show('编辑菜单','<{:url('menu/edit',['id'=>$v['id']])}>',400,500)" href="javascript:;">
+                                        编辑
+                                    </a>
+                                    <a title="删除" onclick="delAll('<{$v['id']}>')" href="javascript:;">
+                                        删除
+                                    </a>
+                                </td>
+                            </tr>
+                        </volist>
+
+                    </if>
+                </volist>
+                <else />
+                    <tr>
+                        <td colspan="6" style="text-align: center">暂无数据</td>
+                    </tr>
+                </if>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        layui.use(['layer'], function(){
+            $ = layui.jquery;
+            var layer = layui.layer;
+        });
+
+        function delAll(argument) {
+            var data;
+            if(argument){
+                data =[argument];
+            }else{
+                data = tableCheck.getData();
+            }
+            var token=$('[name="__token__"]').val();
+            layer.confirm('确认要删除吗？',function(index){
+                //捉到所有被选中的，发异步进行删除
+                //捉到所有被选中的，发异步进行删除
+                var url="<{:url('menu/delete')}>";
+                AjaxP(url,'POST',{"ids":data,"__token__":token},function(res){
+                    if(res.code==1){
+                        deleCall();
+                    }
+
+                });
+
+            });
+        }
+
+    </script>
+    </body>
+</block>

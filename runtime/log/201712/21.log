@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2017-12-21T09:19:44+08:00 ] 127.0.0.1 127.0.0.1 POST /archie/yajienh/public/index.php/index/msg/upload
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/msg/upload [运行时间：0.315580s][吞吐率：3.17req/s] [内存消耗：2,519.74kb] [文件加载：57]
+[ error ] [0]方法参数错误:data[/Users/Web/archie/yajienh/thinkphp/library/think/App.php:282]
+---------------------------------------------------------------
+[ 2017-12-21T11:18:57+08:00 ] 127.0.0.1 127.0.0.1 POST /archie/yajienh/public/index.php/index/msg/msgPraise
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/msg/msgPraise [运行时间：0.350597s][吞吐率：2.85req/s] [内存消耗：2,797.73kb] [文件加载：61]
+[ error ] [0]类型错误: Too few arguments to function webMsg(), 1 passed in /Users/Web/archie/yajienh/app/index/controller/Msg.php on line 191 and exactly 2 expected[/Users/Web/archie/yajienh/app/common.php:153]
+---------------------------------------------------------------
+[ 2017-12-21T11:33:21+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/pc/check_list
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/pc/check_list [运行时间：0.174279s][吞吐率：5.74req/s] [内存消耗：2,600.06kb] [文件加载：58]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[/Users/Web/archie/yajienh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-21T11:33:43+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/pc/check_list
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/pc/check_list [运行时间：0.148930s][吞吐率：6.71req/s] [内存消耗：2,599.37kb] [文件加载：58]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'name' in 'order clause'[/Users/Web/archie/yajienh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-21T11:33:56+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/pc/check_list
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/pc/check_list [运行时间：0.242963s][吞吐率：4.12req/s] [内存消耗：2,600.26kb] [文件加载：58]
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as nam,image,check_time desc LIMIT 50' at line 1[/Users/Web/archie/yajienh/thinkphp/library/think/db/Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-21T11:34:09+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/pc/check_list
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/pc/check_list [运行时间：0.173197s][吞吐率：5.77req/s] [内存消耗：2,639.25kb] [文件加载：55]
+[ error ] [0]variable type error： array[/Users/Web/archie/yajienh/thinkphp/library/think/Response.php:318]
+---------------------------------------------------------------
+[ 2017-12-21T13:53:49+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/index/pc/check_list
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/index/pc/check_list [运行时间：0.687865s][吞吐率：1.45req/s] [内存消耗：2,632.55kb] [文件加载：55]
+[ error ] [0]variable type error： array[/Users/Web/archie/yajienh/thinkphp/library/think/Response.php:318]

@@ -1,0 +1,96 @@
+<extend name="common/common"></extend>
+<block name="body">
+    <body>
+    <!-- 顶部开始 -->
+    <div class="container">
+        <div class="logo"><a href="<{:url('index/index')}>">诗尼曼年会后台管理系统</a></div>
+        <div class="left_open">
+            <i title="展开左侧栏" class="iconfont">&#xe65f;</i>
+        </div>
+
+        <ul class="layui-nav right" lay-filter="">
+            <li class="layui-nav-item">
+                <a href="javascript:;"><{:session('admin_user')['username']}></a>
+                <php>
+                   $userid=session('admin_user')['user_id'];
+                </php>
+                <dl class="layui-nav-child"> <!-- 二级菜单 -->
+                    <dd><a onclick="x_admin_show('个人信息','<{:url('admin/edit',['id'=>$userid])}>')">个人信息</a></dd>
+                    <dd><a href="<{:url('index/loginout')}>">退出</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item to-index"><a href="javascript:;" onclick="clear_all(22)">清除缓存</a></li>
+        </ul>
+
+    </div>
+    <!-- 顶部结束 -->
+    <!-- 中部开始 -->
+    <!-- 左侧菜单开始 -->
+    <div class="left-nav">
+        <div id="side-nav">
+            <ul id="nav">
+                <volist name="menu_list" id="vo">
+                    <li>
+                        <if condition="$vo['child']">
+                            <a href="javascript:;" >
+                        <else />
+                            <a _href="<{:url($vo['route'])}>" class="sub-menu-a">
+                        </if>
+                            <i class="iconfont"><{$vo['icon']}></i>
+                            <cite><{$vo['name']}></cite>
+                        <if condition="$vo['child']">
+                            <i class="iconfont nav_right">&#xe603;</i>
+                        </if>
+                        </a>
+                        <ul class="sub-menu">
+                            <volist name="$vo['child']" id="v">
+                                <li>
+                                    <a _href="<{:url($v['route'])}>">
+                                        <i class="iconfont">&#xe602;</i>
+                                        <cite><{$v['name']}></cite>
+                                    </a>
+                                </li >
+                            </volist>
+                        </ul>
+                    </li>
+                </volist>
+            </ul>
+        </div>
+    </div>
+    <!-- <div class="x-slide_left"></div> -->
+    <!-- 左侧菜单结束 -->
+    <!-- 右侧主体开始 -->
+    <div class="page-content">
+        <div class="layui-tab tab" lay-filter="xbs_tab" lay-allowclose="false">
+            <ul class="layui-tab-title">
+                <li>我的桌面</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <iframe src="<{:url('index/welcome')}>" frameborder="0" scrolling="yes" class="x-iframe"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content-bg"></div>
+    <!-- 右侧主体结束 -->
+    <!-- 中部结束 -->
+    <!-- 底部开始 -->
+    <div class="footer">
+        <div class="copyright">Copyright ©2017 恒帝信息科技有限公司</div>
+    </div>
+    <!-- 底部结束 -->
+    <script type="text/javascript">
+        function clear_all(){
+
+            var url="<{:url('index/clear')}>";
+            AjaxP(url,'GET',false,function(res){
+                layer.msg(res.msg,function(){
+                    window.location.reload();
+                });
+            });
+        }
+
+    </script>
+    </body>
+</block>

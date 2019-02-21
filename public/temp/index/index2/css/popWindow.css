@@ -1,0 +1,82 @@
+.popWindow {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: column; }
+  .popWindow .popBox {
+    background-color: white;
+    width: 80%;
+    border-radius: 10px; }
+    .popWindow .popBox ul li:nth-child(1) p {
+          font-size: 0.3rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0.55rem;
+    color: #272529;
+    padding-top: 0.25rem;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin-bottom: 0.15rem;}
+    .popWindow .popBox ul li:nth-child(2) p {
+          width: 80%;
+    font-size: 0.26rem;
+    text-align: center;
+    line-height: 0.4rem;
+    color: #666666;
+    padding-bottom: 0.25rem;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    margin: 0 auto; }
+    .popWindow .popBox ul li:nth-child(2) {
+      border-bottom: 1px solid #d2d2d2; }
+    .popWindow .popBox ul li:nth-child(3) .onlyOne {
+      width: 100%;
+      height: 0.8rem; }
+      .popWindow .popBox ul li:nth-child(3) .onlyOne button {
+        width: 100%;
+        display: block;
+        height: 0.8rem;
+        color: #007eff;
+        font-size: 0.28rem;
+        background-color: transparent; }
+    .popWindow .popBox ul li:nth-child(3) .onlyTwo {
+      width: 100%;
+      height: 0.8rem;
+      position: relative; }
+      .popWindow .popBox ul li:nth-child(3) .onlyTwo .oLeft {
+        width: 50%; }
+      .popWindow .popBox ul li:nth-child(3) .onlyTwo .oRight {
+        width: 50%; }
+      .popWindow .popBox ul li:nth-child(3) .onlyTwo span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -0.5px;
+        border-right: 1px solid #d2d2d2;
+        height: 0.8rem; }
+      .popWindow .popBox ul li:nth-child(3) .onlyTwo button {
+        width: 100%;
+        display: block;
+        height: 0.8rem;
+        color: #3674df;
+        font-size: 0.28rem;
+        background-color: transparent; }

@@ -1,0 +1,24 @@
+---------------------------------------------------------------
+[ 2018-01-11T18:30:11+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/index
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/index [运行时间：0.062305s][吞吐率：16.05req/s] [内存消耗：1,735.91kb] [文件加载：49]
+[ error ] [2]Illegal string offset 'user_id'[/Users/Web/snmnh/app/index/controller/Fater.php:11]
+---------------------------------------------------------------
+[ 2018-01-11T18:41:35+08:00 ] 192.168.0.108 192.168.0.108 GET /snmnh/public/index.php/index/msg/index
+[ info ] 192.168.0.108/snmnh/public/index.php/index/msg/index [运行时间：0.053540s][吞吐率：18.68req/s] [内存消耗：1,734.40kb] [文件加载：49]
+[ error ] [8]未定义变量: member_id[/Users/Web/snmnh/app/index/controller/Fater.php:26]
+---------------------------------------------------------------
+[ 2018-01-11T18:41:59+08:00 ] 192.168.0.108 192.168.0.108 GET /snmnh/public/index.php/index/msg/index
+[ info ] 192.168.0.108/snmnh/public/index.php/index/msg/index [运行时间：0.050105s][吞吐率：19.96req/s] [内存消耗：1,736.68kb] [文件加载：49]
+[ error ] [8]未定义变量: member_id[/Users/Web/snmnh/app/index/controller/Fater.php:25]
+---------------------------------------------------------------
+[ 2018-01-11T18:42:00+08:00 ] 192.168.0.108 192.168.0.108 GET /snmnh/public/index.php/index/msg/index
+[ info ] 192.168.0.108/snmnh/public/index.php/index/msg/index [运行时间：0.053351s][吞吐率：18.74req/s] [内存消耗：1,736.68kb] [文件加载：49]
+[ error ] [8]未定义变量: member_id[/Users/Web/snmnh/app/index/controller/Fater.php:25]
+---------------------------------------------------------------
+[ 2018-01-11T18:42:13+08:00 ] 192.168.0.108 192.168.0.108 GET /snmnh/public/index.php/index/msg/index
+[ info ] 192.168.0.108/snmnh/public/index.php/index/msg/index [运行时间：0.042948s][吞吐率：23.28req/s] [内存消耗：1,737.43kb] [文件加载：49]
+[ error ] [8]未定义变量: member_id[/Users/Web/snmnh/app/index/controller/Fater.php:26]
+---------------------------------------------------------------
+[ 2018-01-11T18:42:29+08:00 ] 192.168.0.108 192.168.0.108 GET /snmnh/public/index.php/index/msg/index
+[ info ] 192.168.0.108/snmnh/public/index.php/index/msg/index [运行时间：0.055365s][吞吐率：18.06req/s] [内存消耗：1,737.43kb] [文件加载：49]
+[ error ] [8]未定义变量: member_id[/Users/Web/snmnh/app/index/controller/Fater.php:26]

@@ -1,0 +1,164 @@
+---------------------------------------------------------------
+[ 2018-01-12T15:39:25+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/index/index
+[ info ] 127.0.0.1/snmnh/public/index.php/index/index/index [运行时间：0.075649s][吞吐率：13.22req/s] [内存消耗：2,635.57kb] [文件加载：59]
+[ error ] [0]模板文件不存在:/Users/Web/snmnh/app/index/../../public/temp/index/index/index.html[/Users/Web/snmnh/thinkphp/library/think/view/driver/Think.php:80]
+---------------------------------------------------------------
+[ 2018-01-12T18:07:50+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.102082s][吞吐率：9.80req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:07:52+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.075995s][吞吐率：13.16req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:07:54+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.078130s][吞吐率：12.80req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:07:56+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.096121s][吞吐率：10.40req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:07:58+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.088476s][吞吐率：11.30req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:00+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.109230s][吞吐率：9.15req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:02+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.099058s][吞吐率：10.10req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:04+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.090183s][吞吐率：11.09req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:06+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.075812s][吞吐率：13.19req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:08+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.105475s][吞吐率：9.48req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:10+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.111097s][吞吐率：9.00req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:12+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.083507s][吞吐率：11.98req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:14+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.066892s][吞吐率：14.95req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:16+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.079673s][吞吐率：12.55req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:18+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.079893s][吞吐率：12.52req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:20+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.132596s][吞吐率：7.54req/s] [内存消耗：2,815.34kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:22+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.066902s][吞吐率：14.95req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:24+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.078893s][吞吐率：12.68req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:26+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.117712s][吞吐率：8.50req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:28+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.082207s][吞吐率：12.16req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:30+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.085325s][吞吐率：11.72req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:32+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.092007s][吞吐率：10.87req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:34+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.089989s][吞吐率：11.11req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:36+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.205131s][吞吐率：4.87req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:38+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.088431s][吞吐率：11.31req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:40+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.098873s][吞吐率：10.11req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:42+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.076580s][吞吐率：13.06req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:44+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.085676s][吞吐率：11.67req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:46+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.092062s][吞吐率：10.86req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:48+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.107487s][吞吐率：9.30req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:50+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.104811s][吞吐率：9.54req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:52+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.080685s][吞吐率：12.39req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:08:54+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.188980s][吞吐率：5.29req/s] [内存消耗：2,815.22kb] [文件加载：62]
+[ error ] [8]未定义数组索引: data[/Users/Web/snmnh/thinkphp/library/think/Collection.php:327]
+---------------------------------------------------------------
+[ 2018-01-12T18:09:17+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.090959s][吞吐率：10.99req/s] [内存消耗：2,832.38kb] [文件加载：63]
+[ error ] [8]Undefined property: think\paginator\driver\Bootstrap::$data[/Users/Web/snmnh/app/index/controller/Pc.php:31]
+---------------------------------------------------------------
+[ 2018-01-12T18:09:18+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.125163s][吞吐率：7.99req/s] [内存消耗：2,832.44kb] [文件加载：63]
+[ error ] [8]Undefined property: think\paginator\driver\Bootstrap::$data[/Users/Web/snmnh/app/index/controller/Pc.php:31]
+---------------------------------------------------------------
+[ 2018-01-12T18:09:20+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.163361s][吞吐率：6.12req/s] [内存消耗：2,832.44kb] [文件加载：63]
+[ error ] [8]Undefined property: think\paginator\driver\Bootstrap::$data[/Users/Web/snmnh/app/index/controller/Pc.php:31]
+---------------------------------------------------------------
+[ 2018-01-12T18:09:22+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.093978s][吞吐率：10.64req/s] [内存消耗：2,832.44kb] [文件加载：63]
+[ error ] [8]Undefined property: think\paginator\driver\Bootstrap::$data[/Users/Web/snmnh/app/index/controller/Pc.php:31]
+---------------------------------------------------------------
+[ 2018-01-12T18:09:24+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.159896s][吞吐率：6.25req/s] [内存消耗：2,832.44kb] [文件加载：63]
+[ error ] [8]Undefined property: think\paginator\driver\Bootstrap::$data[/Users/Web/snmnh/app/index/controller/Pc.php:31]
+---------------------------------------------------------------
+[ 2018-01-12T18:09:26+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.086191s][吞吐率：11.60req/s] [内存消耗：2,832.44kb] [文件加载：63]
+[ error ] [8]Undefined property: think\paginator\driver\Bootstrap::$data[/Users/Web/snmnh/app/index/controller/Pc.php:31]
+---------------------------------------------------------------
+[ 2018-01-12T18:09:28+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/pc/msglist?page=1
+[ info ] 127.0.0.1/snmnh/public/index.php/index/pc/msglist?page=1 [运行时间：0.101181s][吞吐率：9.88req/s] [内存消耗：2,832.44kb] [文件加载：63]
+[ error ] [8]Undefined property: think\paginator\driver\Bootstrap::$data[/Users/Web/snmnh/app/index/controller/Pc.php:31]

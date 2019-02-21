@@ -1,0 +1,186 @@
+<extend name="common/common"></extend>
+<block name="body">
+    <body>
+    <div class="x-body">
+        <form action="" method="post" class="layui-form layui-form-pane">
+            <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+            <div class="layui-form-item">
+                <label class="layui-form-label">头像</label>
+                <input type="hidden" name="image" id="logo" value="">
+                <div class="layui-input-block">
+                    <div class="layui-upload">
+                        <button type="button" class="layui-btn layui-btn-primary" id="logoBtn"><i class="icon icon-upload3"></i>点击上传</button>
+                        <div class="layui-upload-list" style="margin: 10px 12px;">
+                            <img class="layui-upload-img" id="cltLogo">
+                            <p id="demoText"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>姓名
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" id="name" value="" name="username" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>电话
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" value="" name="phone" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>性别
+                </label>
+                <div style="line-height: 38px">
+                    <input style="margin-left: 12px" lay-ignore type="radio" value="1" name="sex" autocomplete="off" checked >男
+                    <input style="margin-left: 12px" lay-ignore type="radio" value="0" name="sex" autocomplete="off" >女
+                    <input style="margin-left: 12px" lay-ignore type="radio" value="2" name="sex" autocomplete="off" >保密
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>门店名
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" value="" name="store_name" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>省
+                </label>
+                <div class="layui-input-inline">
+                    <select name="province" onchange="loadRegion('province',2,'city','<{:url('getAddrs')}>')" id="province" lay-ignore style="height: 38px;float: left;margin-right: 10px;border-color: #D2D2D2!important;">
+                        <volist name="province" id="vo">
+                            <option value="<{$vo.id}>" ><{$vo.name}></option>
+                        </volist>
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>市
+                </label>
+                <div class="layui-input-inline">
+                    <select name="city" onchange="loadRegion('city',3,'area','<{:url('getAddrs')}>')" id="city" lay-ignore style="height: 38px;float: left;margin-right: 10px;border-color: #D2D2D2!important;">
+
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>区
+                </label>
+                <div class="layui-input-inline">
+                    <select name="area" id="area" lay-ignore style="height: 38px;float: left;margin-right: 10px;border-color: #D2D2D2!important;">
+
+                    </select>
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label for="name" class="layui-form-label">
+                    <span class="x-red">*</span>详细地址
+                </label>
+                <div class="layui-input-inline">
+                    <div class="layui-input-inline">
+                        <input type="text" value="" name="addr" autocomplete="off" class="layui-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="layui-form-item">
+                <button id="cubt" class="layui-btn" lay-submit="" lay-filter="add">提交</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        //省市区三级联动
+        function loadRegion(sel,type_id,selName,url){
+            jQuery("#"+selName+" option").each(function(){
+                jQuery(this).remove();
+            });
+            jQuery("<option value=0>请选择</option>").appendTo(jQuery("#"+selName));
+            if(jQuery("#"+sel).val()==0){
+                return;
+            }
+            jQuery.getJSON(url,{pid:jQuery("#"+sel).val(),type:type_id},
+                function(data){
+                    if(data){
+                        jQuery.each(data,function(idx,item){
+                            jQuery("<option value="+item.id+">"+item.name+"</option>").appendTo(jQuery("#"+selName));
+                        });
+                    }else{
+                        jQuery("<option value='0'>请选择</option>").appendTo(jQuery("#"+selName));
+                    }
+                }
+            );
+        }
+
+
+        layui.use(['form', 'layer','upload'], function () {
+            var form = layui.form,layer = layui.layer,upload = layui.upload,$ = layui.jquery;
+            //普通图片上传
+            var uploadInst = upload.render({
+                elem: '#logoBtn'
+                ,url: '<{:url("Fater/upload")}>'
+                ,before: function(obj){
+                    //预读本地文件示例，不支持ie8
+                    obj.preview(function(index, file, result){
+                        $('#cltLogo').attr('src', result); //图片链接（base64）
+                    });
+                }
+                ,done: function(res){
+                    //上传成功
+                    if(res.code>0){
+                        $('#logo').val(res.url);
+                    }else{
+                        //如果上传失败
+                        return layer.msg('上传失败');
+                    }
+                }
+                ,error: function(){
+                    //演示失败状态，并实现重传
+                    var demoText = $('#demoText');
+                    demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+                    demoText.find('.demo-reload').on('click', function(){
+                        uploadInst.upload();
+                    });
+                }
+            });
+
+            //监听提交
+            form.on('submit(add)', function(data){
+                data.field.province = $('#province option:selected').text();
+                data.field.city = $('#city option:selected').text();
+                data.field.area = $('#area option:selected').text();
+                var index = parent.layer.getFrameIndex(window.name);
+                $.post("<{:url('user/insert')}>", data.field, function (res) {
+                    if (res.code > 0) {
+                        layer.msg(res.msg, {time: 6000, icon: 1}, function () {
+                            //关闭当前frame
+                            parent.layer.close(index);
+                            window.parent.location.reload();
+                        });
+                    } else {
+                        layer.msg(res.msg, {time: 6000, icon: 2});
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    </body>
+</block>

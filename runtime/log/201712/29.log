@@ -1,0 +1,28 @@
+---------------------------------------------------------------
+[ 2017-12-29T14:34:27+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/admin/prize/game_stop/status/1.html
+[ info ] 127.0.0.1/snmnh/public/index.php/admin/prize/game_stop/status/1.html [运行时间：60.141225s][吞吐率：0.02req/s] [内存消耗：2,742.20kb] [文件加载：61]
+[ error ] [2]Redis::connect(): connect() failed: Operation timed out[/Users/Web/snmnh/thinkphp/library/think/cache/driver/Redis.php:51]
+---------------------------------------------------------------
+[ 2017-12-29T18:05:10+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/myprize
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/myprize [运行时间：0.073649s][吞吐率：13.58req/s] [内存消耗：1,810.32kb] [文件加载：53]
+[ error ] [2]Invalid argument supplied for foreach()[/Users/Web/snmnh/app/index/controller/Msg.php:189]
+---------------------------------------------------------------
+[ 2017-12-29T18:10:09+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/myprize
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/myprize [运行时间：0.073439s][吞吐率：13.62req/s] [内存消耗：1,810.73kb] [文件加载：53]
+[ error ] [2]Invalid argument supplied for foreach()[/Users/Web/snmnh/app/index/controller/Msg.php:199]
+---------------------------------------------------------------
+[ 2017-12-29T18:10:11+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/myprize
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/myprize [运行时间：0.045189s][吞吐率：22.13req/s] [内存消耗：1,810.73kb] [文件加载：53]
+[ error ] [2]Invalid argument supplied for foreach()[/Users/Web/snmnh/app/index/controller/Msg.php:199]
+---------------------------------------------------------------
+[ 2017-12-29T18:16:08+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/myprize
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/myprize [运行时间：0.047076s][吞吐率：21.24req/s] [内存消耗：1,811.11kb] [文件加载：53]
+[ error ] [2]Invalid argument supplied for foreach()[/Users/Web/snmnh/app/index/controller/Msg.php:205]
+---------------------------------------------------------------
+[ 2017-12-29T18:25:29+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/myprize
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/myprize [运行时间：0.058982s][吞吐率：16.95req/s] [内存消耗：1,811.61kb] [文件加载：53]
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[/Users/Web/snmnh/app/index/controller/Msg.php:207]
+---------------------------------------------------------------
+[ 2017-12-29T18:26:00+08:00 ] 127.0.0.1 127.0.0.1 GET /snmnh/public/index.php/index/msg/myprize
+[ info ] 127.0.0.1/snmnh/public/index.php/index/msg/myprize [运行时间：0.046639s][吞吐率：21.44req/s] [内存消耗：1,811.61kb] [文件加载：53]
+[ error ] [2]json_decode() expects parameter 1 to be string, array given[/Users/Web/snmnh/app/index/controller/Msg.php:209]

@@ -1,0 +1,79 @@
+<extend name="common/common"></extend>
+<block name="body">
+    <body>
+    <include file="common/nav"/>
+    <div class="x-body">
+        <xblock>
+            <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon">&#xe640;</i>批量删除</button>
+            <button class="layui-btn" onclick="x_admin_show('添加权限','<{:url('auth/create')}>',400,500)"><i class="layui-icon">&#xe61f;</i>添加</button>
+
+        </xblock>
+        <form action="" method="post" class="layui-form layui-form-pane">
+            <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+            <div class="layui-form-item layui-form-text">
+                <table  class="layui-table layui-input-block">
+                    <tbody>
+                        <volist name="list" id="vo">
+                            <tr>
+                                <td>
+                                    <if condition="$vo['child']">
+                                        &nbsp; &nbsp; &nbsp; &nbsp;
+                                    </if>
+                                    <div class="action" onclick="x_admin_show('权限修改','<{:url('auth/edit',['id'=>$vo['id']])}>',400,400)"><{$vo['name']}>-<{$vo['auth']}></div>
+                                    <input name="id[]" type="checkbox" lay-filter="chaeckALl" class="chaeckALl chaeck" value="<{$vo['id']}>">
+                                </td>
+                                <td>
+                                    <div class="layui-input-block">
+                                        <volist name="$vo['child']" id="v">
+                                            <input name="id[]" type="checkbox" class="chaeckChren<{$vo['id']}> chaeck" value="<{$v['id']}>">&nbsp;
+                                            <div class="action" onclick="x_admin_show('权限修改','<{:url('auth/edit',['id'=>$v['id']])}>',400,400)"><{$v['name']}>-<{$v['auth']}></div>
+                                        </volist>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        </volist>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+    </div>
+    <script type="text/javascript">
+        layui.use(['form','layer'], function(){
+            $ = layui.jquery;
+            var form = layui.form
+                ,layer = layui.layer;
+            //监听提交
+            form.on('submit(add)', function(data){
+                console.log(data);
+                //发异步，把数据提交给php
+                layer.alert("增加成功", {icon: 6},function () {
+                    // 获得frame索引
+                    var index = parent.layer.getFrameIndex(window.name);
+                    //关闭当前frame
+                    parent.layer.close(index);
+                });
+                return false;
+            });
+
+
+        });
+        function delAll (argument) {
+            var ids=[];
+            $('.chaeck').each(function(){
+               if($(this).is(':checked')){
+                   ids.push($(this).val());
+               }
+            });
+            var token=$('[name="__token__"]').val();
+            layer.confirm('此操作可能会导致系统故障，请谨慎处理！',function(index){
+                //捉到所有被选中的，发异步进行删除
+                var url="<{:url('auth/delete')}>";
+                AjaxP(url,'POST',{"ids":ids,"__token__":token},function(){
+                    deleCall();
+                });
+            });
+        }
+    </script>
+    </body>
+</block>

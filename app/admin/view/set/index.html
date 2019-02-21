@@ -1,0 +1,58 @@
+<extend name="common/common"></extend>
+<block name="body">
+
+    <include file="common/nav"/>
+    <div class="x-body">
+        <div class="layui-tab">
+            <ul class="layui-tab-title">
+                <li class="layui-this">域名设置</li>
+            </ul>
+            <div class="layui-tab-content">
+                <div class="layui-tab-item layui-show">
+                    <blockquote class="layui-elem-quote">敲钟人数=实际人数+设定的人数</blockquote>
+                    <form class="layui-form" action="">
+                        <input class="layui-input" type="hidden" name="__token__" value="<{$token}>">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">输入框</label>
+                            <div class="layui-input-inline">
+                                <input type="number" class="layui-input" name="value" value="<{$data}>">
+                            </div>
+
+                        </div>
+                        <div class="layui-form-item">
+                            <div class="layui-input-block">
+                                <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script type="text/javascript">
+        layui.use(['layer','form'], function(){
+            $ = layui.jquery;
+            var layer = layui.layer;
+            var form = layui.form;
+            form.on('submit(formDemo)', function(data){
+                AjaxP("<{:url('set/save')}>",'POST',data.field,function(res){
+                    if(res.code==1){
+                        layer.msg(res.msg, {icon: 6,time:1000},function(){
+                            window.location.reload();
+                        });
+                    }else{
+                        layer.msg(res.msg, {icon: 5,time:1000});
+                    }
+                },false);
+                return false;
+            });
+        });
+
+
+    </script>
+    </body>
+</block>

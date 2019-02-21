@@ -1,0 +1,92 @@
+---------------------------------------------------------------
+[ 2017-12-05T10:25:03+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/
+[ info ] 127.0.0.1/yjnh/public/ [运行时间：0.252015s][吞吐率：3.97req/s] [内存消耗：5,128.27kb] [文件加载：58]
+[ error ] [8]unserialize(): Error at offset 58 of 62 bytes[F:\wamp\www\yjnh\app\index\controller\Index.php:21]
+---------------------------------------------------------------
+[ 2017-12-05T10:26:37+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/
+[ info ] 127.0.0.1/yjnh/public/ [运行时间：0.097006s][吞吐率：10.31req/s] [内存消耗：5,128.87kb] [文件加载：58]
+[ error ] [8]unserialize(): Error at offset 58 of 62 bytes[F:\wamp\www\yjnh\app\index\controller\Index.php:21]
+---------------------------------------------------------------
+[ 2017-12-05T10:26:38+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/
+[ info ] 127.0.0.1/yjnh/public/ [运行时间：0.101006s][吞吐率：9.90req/s] [内存消耗：5,128.82kb] [文件加载：58]
+[ error ] [8]unserialize(): Error at offset 58 of 62 bytes[F:\wamp\www\yjnh\app\index\controller\Index.php:21]
+---------------------------------------------------------------
+[ 2017-12-05T11:01:41+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/member/index.html
+[ info ] 127.0.0.1/yjnh/public/admin/member/index.html [运行时间：0.146009s][吞吐率：6.85req/s] [内存消耗：5,760.14kb] [文件加载：67]
+[ error ] [0]类的属性不存在:app\admin\model\Member-><img src="image" alt="" />[F:\wamp\www\yjnh\thinkphp\library\think\Model.php:573]
+---------------------------------------------------------------
+[ 2017-12-05T11:29:51+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/member/create/id/1.html
+[ info ] 127.0.0.1/yjnh/public/admin/member/create/id/1.html [运行时间：0.129007s][吞吐率：7.75req/s] [内存消耗：5,262.92kb] [文件加载：60]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'iamge' in 'field list'[F:\wamp\www\yjnh\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2017-12-05T11:40:57+08:00 ] 127.0.0.1 127.0.0.1 POST /yjnh/public/admin/member/create/id/%7B:url(%22common/upload/Upload/upload%22)%7D
+[ info ] 127.0.0.1/yjnh/public/admin/member/create/id/%7B:url(%22common/upload/Upload/upload%22)%7D [运行时间：0.128007s][吞吐率：7.81req/s] [内存消耗：5,330.83kb] [文件加载：60]
+[ error ] [8]Trying to get property of non-object[F:\wamp\www\yjnh\app\admin\controller\Member.php:48]
+---------------------------------------------------------------
+[ 2017-12-05T15:02:50+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/user/create.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/create.html [运行时间：0.137008s][吞吐率：7.30req/s] [内存消耗：5,311.05kb] [文件加载：59]
+[ error ] [8]Trying to get property of non-object[F:\wamp\www\yjnh\app\admin\controller\User.php:47]
+---------------------------------------------------------------
+[ 2017-12-05T15:06:34+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/user/create/id/1.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/create/id/1.html [运行时间：0.139008s][吞吐率：7.19req/s] [内存消耗：5,297.23kb] [文件加载：59]
+[ error ] [0]模板文件不存在:F:\wamp\www\yjnh\public/../app/admin\view\user\create.html[F:\wamp\www\yjnh\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2017-12-05T15:07:30+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/user/add.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/add.html [运行时间：0.103006s][吞吐率：9.71req/s] [内存消耗：5,220.92kb] [文件加载：58]
+[ error ] [0]模板文件不存在:F:\wamp\www\yjnh\public/../app/admin\view\user\add.html[F:\wamp\www\yjnh\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2017-12-05T15:12:43+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/user/add.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/add.html [运行时间：0.130007s][吞吐率：7.69req/s] [内存消耗：5,661.26kb] [文件加载：63]
+[ error ] [8]未定义变量: data[F:\wamp\www\yjnh\runtime\temp\4199401341d8626e5a655f68bac6a70c.php:84]
+---------------------------------------------------------------
+[ 2017-12-05T15:46:43+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/user/create/id/3.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/create/id/3.html [运行时间：0.121007s][吞吐率：8.26req/s] [内存消耗：5,316.05kb] [文件加载：59]
+[ error ] [0]模板文件不存在:F:\wamp\www\yjnh\public/../app/admin\view\user\create.html[F:\wamp\www\yjnh\thinkphp\library\think\view\driver\Think.php:80]
+---------------------------------------------------------------
+[ 2017-12-05T16:11:36+08:00 ] 127.0.0.1 127.0.0.1 POST /yjnh/public/admin/user/save.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/save.html [运行时间：0.191011s][吞吐率：5.24req/s] [内存消耗：5,285.13kb] [文件加载：59]
+[ error ] [1]Call to undefined method app\admin\controller\User::getError()[F:\wamp\www\yjnh\app\admin\controller\User.php:90]
+---------------------------------------------------------------
+[ 2017-12-05T16:38:22+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/user/add_csv.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/add_csv.html [运行时间：0.110006s][吞吐率：9.09req/s] [内存消耗：5,603.65kb] [文件加载：63]
+[ error ] [8]未定义变量: province[F:\wamp\www\yjnh\runtime\temp\68a3ce1bb469b5f720cf289646d9d561.php:83]
+---------------------------------------------------------------
+[ 2017-12-05T17:01:45+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/fater/downfile.html?
+[ info ] 127.0.0.1/yjnh/public/admin/fater/downfile.html? [运行时间：0.096005s][吞吐率：10.42req/s] [内存消耗：5,124.44kb] [文件加载：57]
+[ error ] [2]file_get_contents(): Filename cannot be empty[F:\wamp\www\yjnh\app\admin\controller\Fater.php:93]
+---------------------------------------------------------------
+[ 2017-12-05T17:03:45+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/fater/downfile.html?
+[ info ] 127.0.0.1/yjnh/public/admin/fater/downfile.html? [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：5,124.59kb] [文件加载：57]
+[ error ] [2]file_get_contents(): Filename cannot be empty[F:\wamp\www\yjnh\app\admin\controller\Fater.php:93]
+---------------------------------------------------------------
+[ 2017-12-05T17:06:27+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/fater/downfile.html?
+[ info ] 127.0.0.1/yjnh/public/admin/fater/downfile.html? [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：5,119.34kb] [文件加载：57]
+[ error ] [2]file_get_contents(__ROOT__/uploads/模板.csv): failed to open stream: No such file or directory[F:\wamp\www\yjnh\app\admin\controller\Fater.php:88]
+---------------------------------------------------------------
+[ 2017-12-05T17:08:41+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/fater/downfile.html?
+[ info ] 127.0.0.1/yjnh/public/admin/fater/downfile.html? [运行时间：0.093005s][吞吐率：10.75req/s] [内存消耗：5,119.34kb] [文件加载：57]
+[ error ] [2]file_get_contents(./public/uploads/模板.csv): failed to open stream: No such file or directory[F:\wamp\www\yjnh\app\admin\controller\Fater.php:88]
+---------------------------------------------------------------
+[ 2017-12-05T17:39:48+08:00 ] 127.0.0.1 127.0.0.1 POST /yjnh/public/admin/user/save_csv.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/save_csv.html [运行时间：0.129008s][吞吐率：7.75req/s] [内存消耗：5,327.95kb] [文件加载：59]
+[ error ] [1]Cannot access protected property think\File::$filename[F:\wamp\www\yjnh\app\admin\controller\User.php:135]
+---------------------------------------------------------------
+[ 2017-12-05T17:41:48+08:00 ] 127.0.0.1 127.0.0.1 POST /yjnh/public/admin/user/save_csv.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/save_csv.html [运行时间：0.103006s][吞吐率：9.71req/s] [内存消耗：5,328.27kb] [文件加载：59]
+[ error ] [1]Cannot access protected property think\File::$filename[F:\wamp\www\yjnh\app\admin\controller\User.php:135]
+---------------------------------------------------------------
+[ 2017-12-05T18:02:43+08:00 ] 127.0.0.1 127.0.0.1 POST /yjnh/public/admin/user/save_csv.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/save_csv.html [运行时间：0.113007s][吞吐率：8.85req/s] [内存消耗：5,195.34kb] [文件加载：58]
+[ error ] [2]mb_convert_encoding() expects parameter 1 to be string, array given[F:\wamp\www\yjnh\app\admin\controller\User.php:138]
+---------------------------------------------------------------
+[ 2017-12-05T18:16:02+08:00 ] 127.0.0.1 127.0.0.1 POST /yjnh/public/admin/user/save_csv.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/save_csv.html [运行时间：0.110006s][吞吐率：9.09req/s] [内存消耗：5,196.04kb] [文件加载：58]
+[ error ] [2]mb_convert_encoding() expects parameter 1 to be string, array given[F:\wamp\www\yjnh\app\admin\controller\User.php:141]
+---------------------------------------------------------------
+[ 2017-12-05T18:34:40+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/user/save_csv.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/save_csv.html [运行时间：0.095006s][吞吐率：10.53req/s] [内存消耗：5,201.91kb] [文件加载：58]
+[ error ] [8]未定义数组索引: file[F:\wamp\www\yjnh\app\admin\controller\User.php:134]
+---------------------------------------------------------------
+[ 2017-12-05T18:50:12+08:00 ] 127.0.0.1 127.0.0.1 POST /yjnh/public/admin/user/save_csv.html
+[ info ] 127.0.0.1/yjnh/public/admin/user/save_csv.html [运行时间：0.105006s][吞吐率：9.52req/s] [内存消耗：5,233.06kb] [文件加载：58]
+[ error ] [8]未定义变量: re[F:\wamp\www\yjnh\app\admin\controller\User.php:167]

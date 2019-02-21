@@ -1,0 +1,34 @@
+<extend name="common/common"></extend>
+<block name="body">
+    <div class="x-body">
+        <blockquote class="layui-elem-quote">
+            <a href="<{:url('dealer/drmb')}>" style="color: blue">下载导入模版</a>
+        </blockquote>
+        <form action="<{:url('dealer/do_import')}>" method="post" enctype="multipart/form-data" class="layui-form">
+            <div class="layui-form-item">
+                <label for="link" class="layui-form-label">
+                    <span class="x-red"></span>文件上传
+                </label>
+                <div class="layui-input-inline">
+                    <input type="file" name="temp"/>
+                    <div>
+
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <label class="layui-form-label">客户角色</label>
+                    <div class="layui-input-block">
+                        <input type="radio" name="type" value="1" title="经销商" checked>
+                        <input type="radio" name="type" value="2" title="分销商">
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="layui-btn">上传</button>
+                </div>
+        </form>
+        <script>
+
+        </script>
+    </div>
+</block>

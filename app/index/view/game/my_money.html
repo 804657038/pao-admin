@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>雅洁数钱</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" type="text/css" href="__MONERY__/css/style.css">
+    <link rel="stylesheet" type="text/css" href="__MONERY__/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="__MONERY__/css/animate.min.css">
+    <script type="text/javascript" src="__MONERY__/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src='__MONERY__/js/lufylegend-1.10.1.js'></script>
+    <script type="text/javascript">
+        var _monery="__MONERY__";
+        var web_url="http://archie.hengdikeji.com/nh2017/public/index.php/";
+        var img_url="http://archie.hengdikeji.com/nh2017/public";
+    </script>
+    <!--移动端版本兼容 -->
+    <script type="text/javascript" src='__MONERY__/js/mobile.js'></script>
+    <!-- 自适应屏幕 -->
+    <script type="text/javascript">
+        $(function(){
+            wHeight=$(window).height();
+            if(wHeight<975){
+                wHeight=975;
+            }
+            $('.page').height(wHeight).css('background-position','center '+(wHeight-1334)/2+'px');
+            $('.h832').css('padding-top',(wHeight-975)/2+'px');
+        })
+    </script>
+    <script src="https://cdn.staticfile.org/PreloadJS/0.6.0/preloadjs.min.js"></script>
+    <script src="https://cdn.staticfile.org/SoundJS/0.6.0/soundjs.min.js"></script>
+    <script type="text/javascript" src='__MONERY__/js/loading.js'></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script type="text/javascript" src="https://static.runoob.com/assets/vue/1.0.11/vue.min.js"></script>
+    <script type="text/javascript">
+        //微信分享
+        $.ajax({
+            type:'GET',
+            url:'http://archie.hengdikeji.com/nh2017/public/index.php/index/Index/jssdk_all/',
+            dataType:'JSON',
+            success:function(res){
+                wx.config({
+                    debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+                    appId:res.appId, // 必填，公众号的唯一标识
+
+                    timestamp: res.timestamp, // 必填，生成签名的时间戳
+
+                    nonceStr:res.nonceStr, // 必填，生成签名的随机串
+
+                    signature:res.signature,// 必填，签名，见附录1
+
+                    jsApiList: ['hideMenuItems'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+
+                });
+                wx.ready(function () {
+                    wx.hideMenuItems({
+                        menuList: [
+                            "menuItem:share:appMessage",
+                            "menuItem:share:timeline",
+                            "menuItem:share:qq",
+                            "menuItem:share:weiboApp",
+                            "menuItem:favorite",
+                            "menuItem:share:facebook",
+                            "menuItem:share:QZone",
+                            "menuItem:copyUrl",
+                            "menuItem:openWithQQBrowser",
+                            "menuItem:openWithSafari"
+                        ]
+                    });
+                })
+            }
+        });
+    </script>
+
+</head>
+<body>
+
+<!-- 添加音乐 -->
+<audio id="bgmusic" class="yue" controls preload="auto" loop="loop">
+    <source src="__MONERY__/music/bgm.mp3" type="audio/mpeg">
+</audio>
+<div class="loading">
+    <div class="page">
+        <div class="h832" style="padding-top: 0px;">
+            <div class="innerDiv">
+
+                <div class="loading_c">
+                    <img src="__MONERY__/img/logo.png" alt="" class="logoImg">
+                    <p class="progress">0%</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<img src="__MONERY__/img/yue.png" alt="" class="mus rotate">
+
+<!-- wrap -->
+<div class="wrap page">
+    <div class="h832" style="padding-top: 0px;">
+        <div class="innerDiv">
+
+            <img src="__MONERY__/img/logo.png" alt="" class="logo bounceInLeft">
+            <img src="__MONERY__/img/moneybg.png" alt="" class="moneybg bounceIn">
+            <img src="__MONERY__/img/banner.png" alt="" class="banner bounceInDown">
+            <img src="__MONERY__/img/banner2.png" alt="" class="banner2 bounceInUp">
+            <img src="__MONERY__/img/startBtn.png" alt="" class="startBtn bounceInUp">
+
+
+        </div>
+    </div>
+</div>
+<!-- 游戏说明 -->
+<div class="ruleBg">
+
+    <div class="ruleBg_c">
+        <img src="__MONERY__/img/letGo.png" alt="" class="letGo">
+    </div>
+
+</div>
+
+<!-- 游戏页面 -->
+<div id="mylegend"></div>
+
+<!-- 准备开始 -->
+<div class="readyBg">
+
+    <div class="kuang bounceInDown">
+        <p>3!</p>
+    </div>
+
+    <img src="__MONERY__/img/hore.png" alt="" class="hore bounceInUp">
+</div>
+<div id="vueMain">
+    <!-- 输出结果 -->
+    <div class="resultBg" style="display: block">
+        <div class="page">
+            <div class="h832" style="padding-top: 0px;">
+                <div class="innerDiv">
+                    <img src="__MONERY__/img/logo.png" alt="" class="logo">
+
+                    <img src="__MONERY__/img/zi1.png" alt="" class="zi1">
+
+                    <img src="__MONERY__/img/decorate.png" alt="" class="decorate">
+                    <p class="result_c">
+                        <span>恭喜您,数到“毛爷爷”</span>
+                        <i><{$num*100}>元</i>
+                    </p>
+
+                    <img src="__MONERY__/img/zi.png" alt="" class="zi">
+
+                    <img src="__MONERY__/img/paiBtn.png" alt="" class="paiBtn">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 排行榜 -->
+    <div class="rankingBg">
+        <div class="kuang2">
+            <img src="__MONERY__/img/rankingTit.png" alt="" class="rankingTit">
+            <ul class="rank_list">
+
+            </ul>
+
+            <img src="__MONERY__/img/queBtn.png" alt="" class="queBtn">
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    window.onload=function(){
+        var hh = document.body.clientHeight;
+        var ww = document.body.clientWidth;
+        LGlobal.align = LStageAlign.MIDDLE;
+        LGlobal.stageScale = LStageScaleMode.EXACT_FIT ;
+        LSystem.screen(LStage.FULL_SCREEN);
+        init(26,'mylegend',ww,hh,main,LEvent.INIT);
+    }
+</script>
+
+
+<script type="text/javascript" src='__MONERY__/js/voucher.js'></script>
+<script type="text/javascript" src='__MONERY__/js/money.js?v=1'></script>
+<script type="text/javascript" src='__MONERY__/js/main.js'></script>
+
+</body>
+</html>

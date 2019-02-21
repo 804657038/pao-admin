@@ -1,0 +1,16 @@
+---------------------------------------------------------------
+[ 2017-12-19T14:28:25+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/lottery/index.html
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/lottery/index.html [运行时间：0.213583s][吞吐率：4.68req/s] [内存消耗：2,692.38kb] [文件加载：57]
+[ error ] [0]Class app\admin\model\AdminLottery does not exist[/Users/Web/archie/yajienh/thinkphp/library/think/App.php:260]
+---------------------------------------------------------------
+[ 2017-12-19T15:08:29+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/index/clear.html?_=1513662747497
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/index/clear.html?_=1513662747497 [运行时间：0.222203s][吞吐率：4.50req/s] [内存消耗：2,692.34kb] [文件加载：58]
+[ error ] [0]不支持: redis[/Users/Web/archie/yajienh/thinkphp/library/think/cache/driver/Redis.php:44]
+---------------------------------------------------------------
+[ 2017-12-19T15:08:49+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/index/clear
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/index/clear [运行时间：0.098626s][吞吐率：10.14req/s] [内存消耗：2,691.97kb] [文件加载：58]
+[ error ] [0]不支持: redis[/Users/Web/archie/yajienh/thinkphp/library/think/cache/driver/Redis.php:44]
+---------------------------------------------------------------
+[ 2017-12-19T15:29:34+08:00 ] 127.0.0.1 127.0.0.1 GET /archie/yajienh/public/index.php/admin/index/clear
+[ info ] 127.0.0.1/archie/yajienh/public/index.php/admin/index/clear [运行时间：0.211126s][吞吐率：4.74req/s] [内存消耗：2,691.97kb] [文件加载：58]
+[ error ] [0]不支持: redis[/Users/Web/archie/yajienh/thinkphp/library/think/cache/driver/Redis.php:44]

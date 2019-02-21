@@ -1,0 +1,8 @@
+---------------------------------------------------------------
+[ 2017-12-04T19:42:04+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/member/create/id/1.html
+[ info ] 127.0.0.1/yjnh/public/admin/member/create/id/1.html [运行时间：0.133007s][吞吐率：7.52req/s] [内存消耗：5,587.48kb] [文件加载：63]
+[ error ] [8]未定义变量: auth_list[F:\wamp\www\yjnh\runtime\temp\f69e344e604c26758e2ceaf89261213e.php:88]
+---------------------------------------------------------------
+[ 2017-12-04T19:52:40+08:00 ] 127.0.0.1 127.0.0.1 GET /yjnh/public/admin/member/create/id/1.html
+[ info ] 127.0.0.1/yjnh/public/admin/member/create/id/1.html [运行时间：0.124007s][吞吐率：8.06req/s] [内存消耗：5,704.13kb] [文件加载：64]
+[ error ] [8]未定义变量: info[F:\wamp\www\yjnh\runtime\temp\f69e344e604c26758e2ceaf89261213e.php:71]
